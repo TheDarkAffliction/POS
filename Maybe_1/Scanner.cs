@@ -105,11 +105,12 @@ namespace Maybe_1
         public static double new_value = 0;
         private void btnGiftCard_Click(object sender, EventArgs e)
         {
-            string current = frmMain.tbxBalance.Text.Remove(0,1);
+            string current = frmMain.tbxBalance.Text.Replace("$","");
             new_value = Convert.ToDouble(current);
+            Console.WriteLine(new_value);
             new_value += 25;
+            Console.WriteLine(new_value);
             frmMain.tbxBalance.Text = "$" + new_value;
-            
         }
 
         private void tmrUpdate_Tick(object sender, EventArgs e)

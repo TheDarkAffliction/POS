@@ -205,6 +205,7 @@
             this.Controls.Add(this.tbxTotal);
             this.Name = "frmCash";
             this.Text = "Cash";
+            this.Load += new System.EventHandler(this.frmCash_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

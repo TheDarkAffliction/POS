@@ -14,14 +14,30 @@ namespace Maybe_1
 {
     public partial class frmPayNow : Form
     {
+        public static frmPayment frmPayment = new frmPayment();
         public frmPayNow()
         {
             InitializeComponent();
         }
 
+        public void update_cash()
+        {
+           double var1 = Convert.ToDouble(frmScanner.frmMain.tbxBalance.Text.Replace("$", ""));
+           tbxBalance.Text = "$" + ((frmCash.total / 100) + var1).ToString("#.00", CultureInfo.InvariantCulture);
+           if(((frmCash.total / 100) + var1) >= Convert.ToDouble(frmMain.frmPayNow.tbxTotal.Text.Replace("$","")))
+            {
+                frmPayment.Show();
+            }
+        }
+
+        public void update()
+        {
+
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void frmPayNow_Load(object sender, EventArgs e)
