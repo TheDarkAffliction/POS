@@ -51,9 +51,9 @@ namespace Maybe_1
 
         }
 
+        public static frmPayNow frmPayNow = new frmPayNow();
         private void btnPayNow_Click(object sender, EventArgs e)
         {
-            frmPayNow frmPayNow = new frmPayNow();
             frmPayNow.Show();
         }
 

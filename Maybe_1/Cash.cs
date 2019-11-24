@@ -15,7 +15,7 @@ namespace Maybe_1
     public partial class frmCash : Form
     {
 
-        double total = 0;
+        public static double total = 0;
 
         public frmCash()
         {
@@ -124,7 +124,6 @@ namespace Maybe_1
         {
             if(total.ToString().Length > 1)
             {
-                Console.WriteLine(total);
                 total = Math.Floor(total/10);
             }
             else
@@ -133,18 +132,16 @@ namespace Maybe_1
             }
             update();
         }
-        public static frmPayNow frmPayNow = new frmPayNow();
+
         private void btnEnter_Click(object sender, EventArgs e)
-        {
-            string temp = frmPayNow.tbxTotal.Text.Replace("$", "");
-            Console.WriteLine(temp);
-            Console.WriteLine(total);
-            if(total/100 > Convert.ToDouble(temp))
-            {
-                new frmPayment().Show();
-                
-            }
+        { 
+            frmMain.frmPayNow.update_cash();
             this.Close();
+        }
+
+        private void frmCash_Load(object sender, EventArgs e)
+        {
+            total = 0;
         }
     }
 }
