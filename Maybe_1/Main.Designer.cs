@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.btnPower = new System.Windows.Forms.Button();
             this.btnPayNow = new System.Windows.Forms.Button();
-            this.btnCurrentDeals = new System.Windows.Forms.Button();
+            this.btnFlags = new System.Windows.Forms.Button();
             this.btnDiscount = new System.Windows.Forms.Button();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.tmrLoad = new System.Windows.Forms.Timer(this.components);
@@ -88,17 +88,17 @@
             this.btnPayNow.UseVisualStyleBackColor = false;
             this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
-            // btnCurrentDeals
+            // btnFlags
             // 
-            this.btnCurrentDeals.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCurrentDeals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCurrentDeals.Location = new System.Drawing.Point(1398, 395);
-            this.btnCurrentDeals.Name = "btnCurrentDeals";
-            this.btnCurrentDeals.Size = new System.Drawing.Size(174, 124);
-            this.btnCurrentDeals.TabIndex = 1;
-            this.btnCurrentDeals.Text = "Current Deals";
-            this.btnCurrentDeals.UseVisualStyleBackColor = true;
-            this.btnCurrentDeals.Click += new System.EventHandler(this.btnCurrentDeals_Click);
+            this.btnFlags.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnFlags.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFlags.Location = new System.Drawing.Point(1398, 395);
+            this.btnFlags.Name = "btnFlags";
+            this.btnFlags.Size = new System.Drawing.Size(174, 124);
+            this.btnFlags.TabIndex = 1;
+            this.btnFlags.Text = "Flags";
+            this.btnFlags.UseVisualStyleBackColor = true;
+            this.btnFlags.Click += new System.EventHandler(this.btnCurrentDeals_Click);
             // 
             // btnDiscount
             // 
@@ -499,7 +499,7 @@
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.btnDiscount);
             this.Controls.Add(this.tbxBalance);
-            this.Controls.Add(this.btnCurrentDeals);
+            this.Controls.Add(this.btnFlags);
             this.Controls.Add(this.tbxTotal);
             this.Controls.Add(this.btnPayNow);
             this.Controls.Add(this.btnPower);
@@ -516,7 +516,7 @@
 
         private System.Windows.Forms.Button btnPower;
         private System.Windows.Forms.Button btnPayNow;
-        private System.Windows.Forms.Button btnCurrentDeals;
+        private System.Windows.Forms.Button btnFlags;
         private System.Windows.Forms.Button btnDiscount;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.Timer tmrLoad;

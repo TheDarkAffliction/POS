@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Maybe_1
 {
-    public partial class Flags : Form
+    public partial class frmFlags : Form
     {
-        public Flags()
+        public frmFlags()
         {
             InitializeComponent();
         }
