@@ -16,5 +16,10 @@ namespace Maybe_1
         {
             InitializeComponent();
         }
+
+        private void Debit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

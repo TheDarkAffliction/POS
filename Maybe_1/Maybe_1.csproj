@@ -119,6 +119,9 @@
     <EmbeddedResource Include="Cash.resx">
       <DependentUpon>Cash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Debit.resx">
+      <DependentUpon>Debit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
     </EmbeddedResource>
