@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.btnPower = new System.Windows.Forms.Button();
             this.btnPayNow = new System.Windows.Forms.Button();
-            this.btnCurrentDeals = new System.Windows.Forms.Button();
+            this.btnFlags = new System.Windows.Forms.Button();
             this.btnDiscount = new System.Windows.Forms.Button();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.tmrLoad = new System.Windows.Forms.Timer(this.components);
@@ -60,12 +60,13 @@
             this.lblDiscount = new System.Windows.Forms.Label();
             this.tbxDiscount = new System.Windows.Forms.TextBox();
             this.lblSportCo = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPower
             // 
-            this.btnPower.Location = new System.Drawing.Point(1422, 12);
+            this.btnPower.Location = new System.Drawing.Point(1117, 32);
             this.btnPower.Name = "btnPower";
             this.btnPower.Size = new System.Drawing.Size(150, 150);
             this.btnPower.TabIndex = 0;
@@ -85,19 +86,19 @@
             this.btnPayNow.UseVisualStyleBackColor = false;
             this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
-            // btnCurrentDeals
+            // btnFlags
             // 
-            this.btnCurrentDeals.Location = new System.Drawing.Point(1398, 395);
-            this.btnCurrentDeals.Name = "btnCurrentDeals";
-            this.btnCurrentDeals.Size = new System.Drawing.Size(174, 124);
-            this.btnCurrentDeals.TabIndex = 0;
-            this.btnCurrentDeals.Text = "Current Deals";
-            this.btnCurrentDeals.UseVisualStyleBackColor = true;
-            this.btnCurrentDeals.Click += new System.EventHandler(this.btnCurrentDeals_Click);
+            this.btnFlags.Location = new System.Drawing.Point(1398, 395);
+            this.btnFlags.Name = "btnFlags";
+            this.btnFlags.Size = new System.Drawing.Size(174, 124);
+            this.btnFlags.TabIndex = 0;
+            this.btnFlags.Text = "Flags";
+            this.btnFlags.UseVisualStyleBackColor = true;
+            this.btnFlags.Click += new System.EventHandler(this.btnCurrentDeals_Click);
             // 
             // btnDiscount
             // 
-            this.btnDiscount.Location = new System.Drawing.Point(1398, 262);
+            this.btnDiscount.Location = new System.Drawing.Point(1398, 109);
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.Size = new System.Drawing.Size(174, 127);
             this.btnDiscount.TabIndex = 0;
@@ -181,7 +182,7 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
             this.tblpMain.Location = new System.Drawing.Point(61, 272);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
@@ -457,12 +458,22 @@
             this.lblSportCo.Text = "Sport Co.";
             this.lblSportCo.Click += new System.EventHandler(this.label1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1398, 272);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(174, 117);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblSportCo);
             this.Controls.Add(this.tbxDiscount);
             this.Controls.Add(this.lblDiscount);
@@ -487,7 +498,7 @@
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.btnDiscount);
             this.Controls.Add(this.tbxBalance);
-            this.Controls.Add(this.btnCurrentDeals);
+            this.Controls.Add(this.btnFlags);
             this.Controls.Add(this.tbxTotal);
             this.Controls.Add(this.btnPayNow);
             this.Controls.Add(this.btnPower);
@@ -504,7 +515,7 @@
 
         private System.Windows.Forms.Button btnPower;
         private System.Windows.Forms.Button btnPayNow;
-        private System.Windows.Forms.Button btnCurrentDeals;
+        private System.Windows.Forms.Button btnFlags;
         private System.Windows.Forms.Button btnDiscount;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.Timer tmrLoad;
@@ -533,6 +544,7 @@
         private System.Windows.Forms.Label lblDiscount;
         public System.Windows.Forms.TextBox tbxDiscount;
         private System.Windows.Forms.Label lblSportCo;
+        private System.Windows.Forms.Button button1;
     }
 }
 

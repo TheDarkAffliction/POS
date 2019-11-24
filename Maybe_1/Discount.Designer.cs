@@ -41,6 +41,7 @@
             this.btnEight = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.tbxPercent = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDel
@@ -177,19 +178,31 @@
             // tbxPercent
             // 
             this.tbxPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPercent.Location = new System.Drawing.Point(12, 12);
+            this.tbxPercent.Location = new System.Drawing.Point(93, 12);
             this.tbxPercent.Name = "tbxPercent";
-            this.tbxPercent.Size = new System.Drawing.Size(237, 44);
+            this.tbxPercent.Size = new System.Drawing.Size(156, 44);
             this.tbxPercent.TabIndex = 27;
             this.tbxPercent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbxPercent.TextChanged += new System.EventHandler(this.tbxPercent_TextChanged);
             this.tbxPercent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxPercent_KeyPress);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 43);
+            this.btnBack.TabIndex = 40;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmDiscount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(253, 386);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.btnSeven);
@@ -226,5 +239,6 @@
         private System.Windows.Forms.Button btnEight;
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.TextBox tbxPercent;
+        private System.Windows.Forms.Button btnBack;
     }
 }

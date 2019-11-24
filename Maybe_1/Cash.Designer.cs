@@ -41,16 +41,17 @@
             this.btnSeven = new System.Windows.Forms.Button();
             this.btnEnter = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbxTotal
             // 
             this.tbxTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxTotal.Location = new System.Drawing.Point(12, 12);
+            this.tbxTotal.Location = new System.Drawing.Point(93, 12);
             this.tbxTotal.Name = "tbxTotal";
             this.tbxTotal.ReadOnly = true;
             this.tbxTotal.ShortcutsEnabled = false;
-            this.tbxTotal.Size = new System.Drawing.Size(237, 44);
+            this.tbxTotal.Size = new System.Drawing.Size(156, 44);
             this.tbxTotal.TabIndex = 2;
             this.tbxTotal.TabStop = false;
             this.tbxTotal.Text = "$0.00";
@@ -199,11 +200,23 @@
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 43);
+            this.btnBack.TabIndex = 27;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmCash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(257, 386);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.btnSeven);
@@ -241,5 +254,6 @@
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Button btnDel;
         public System.Windows.Forms.TextBox tbxTotal;
+        private System.Windows.Forms.Button btnBack;
     }
 }

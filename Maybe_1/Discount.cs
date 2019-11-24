@@ -118,5 +118,11 @@ namespace Maybe_1
                 this.Close();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            discount = 0;
+            this.Hide();
+        }
     }
 }

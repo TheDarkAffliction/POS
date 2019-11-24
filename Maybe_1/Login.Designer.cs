@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.tbxEnterID = new System.Windows.Forms.TextBox();
-            this.FIXED_EnterID = new System.Windows.Forms.TextBox();
             this.pctrLogo = new System.Windows.Forms.PictureBox();
+            this.lblEnterID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,19 +40,10 @@
             this.tbxEnterID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxEnterID.Location = new System.Drawing.Point(141, 220);
             this.tbxEnterID.Name = "tbxEnterID";
+            this.tbxEnterID.PasswordChar = '*';
             this.tbxEnterID.Size = new System.Drawing.Size(100, 29);
             this.tbxEnterID.TabIndex = 0;
             this.tbxEnterID.TextChanged += new System.EventHandler(this.tbxEnterID_TextChanged);
-            // 
-            // FIXED_EnterID
-            // 
-            this.FIXED_EnterID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FIXED_EnterID.Location = new System.Drawing.Point(149, 177);
-            this.FIXED_EnterID.Name = "FIXED_EnterID";
-            this.FIXED_EnterID.ReadOnly = true;
-            this.FIXED_EnterID.Size = new System.Drawing.Size(83, 31);
-            this.FIXED_EnterID.TabIndex = 1;
-            this.FIXED_EnterID.Text = "Enter ID";
             // 
             // pctrLogo
             // 
@@ -64,13 +55,23 @@
             this.pctrLogo.TabIndex = 2;
             this.pctrLogo.TabStop = false;
             // 
+            // lblEnterID
+            // 
+            this.lblEnterID.AutoSize = true;
+            this.lblEnterID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnterID.Location = new System.Drawing.Point(147, 192);
+            this.lblEnterID.Name = "lblEnterID";
+            this.lblEnterID.Size = new System.Drawing.Size(95, 25);
+            this.lblEnterID.TabIndex = 3;
+            this.lblEnterID.Text = "Enter ID:";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 261);
+            this.Controls.Add(this.lblEnterID);
             this.Controls.Add(this.pctrLogo);
-            this.Controls.Add(this.FIXED_EnterID);
             this.Controls.Add(this.tbxEnterID);
             this.Name = "frmLogin";
             this.Text = "Login";
@@ -84,7 +85,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox tbxEnterID;
-        private System.Windows.Forms.TextBox FIXED_EnterID;
         private System.Windows.Forms.PictureBox pctrLogo;
+        private System.Windows.Forms.Label lblEnterID;
     }
 }

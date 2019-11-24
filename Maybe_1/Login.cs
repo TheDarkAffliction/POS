@@ -10,17 +10,20 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.IO;
 
+using System.Resources;
+
 namespace Maybe_1
 {
     public partial class frmLogin : Form
     {
 
+        public static frmScanner frmScanner = new frmScanner();
+        public static frmAdmin frmAdmin = new frmAdmin();
         public static class Globals
         {
             //Till Number
             private static string tillNoFile = Properties.Resources.tillNo;
             public static List<string> tillNo = tillNoFile.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
-
 
 
             //Names and ID
@@ -54,17 +57,17 @@ namespace Maybe_1
         {
             if (Globals.ID.Contains(tbxEnterID.Text))
             {
-                new frmScanner().Show();
+                frmScanner.Show();
                 location = Globals.ID.FindIndex(x => x == tbxEnterID.Text);
-                this.Hide();
+                this.Close();
 
             }
             else if (Globals.adminID.Contains(tbxEnterID.Text))
             {
-                new frmAdmin().Show();
+                frmAdmin.Show();
                 location = Globals.adminID.FindIndex(x => x == tbxEnterID.Text);
                 admin = true;
-                this.Hide();
+                this.Close();
             }                               
         }
 

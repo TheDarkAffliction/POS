@@ -107,9 +107,7 @@ namespace Maybe_1
         {
             string current = frmMain.tbxBalance.Text.Replace("$","");
             new_value = Convert.ToDouble(current);
-            Console.WriteLine(new_value);
             new_value += 25;
-            Console.WriteLine(new_value);
             frmMain.tbxBalance.Text = "$" + new_value;
         }
 

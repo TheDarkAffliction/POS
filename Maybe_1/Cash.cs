@@ -110,7 +110,6 @@ namespace Maybe_1
 
         private void frmCash_KeyDown(object sender, KeyEventArgs e)
         {
-            Console.WriteLine("YEET");
             if (e.KeyCode == Keys.D0 || e.KeyCode == Keys.NumPad0) { numPressed(0); }
             else if (e.KeyCode == Keys.D1 || e.KeyCode == Keys.NumPad2) { numPressed(1); }
             else if (e.KeyCode == Keys.D2 || e.KeyCode == Keys.NumPad3) { numPressed(2); }
@@ -135,6 +134,12 @@ namespace Maybe_1
             {
                 Console.WriteLine("NONE");
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            total = 0;
+            this.Hide();
         }
     }
 }

@@ -144,6 +144,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.ControlBox = false;
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.tbxBalance);
             this.Controls.Add(this.btnCredit);
