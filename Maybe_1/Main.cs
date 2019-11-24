@@ -54,6 +54,7 @@ namespace Maybe_1
         {
             frmPayNow.tbxTotal.Text = "$" + (frmScanner.gross + (frmScanner.gross / 100 * 13) - frmScanner.gross * (frmDiscount.discount / 100)).ToString("#.00", CultureInfo.InvariantCulture);
             frmPayNow.tbxBalance.Text = "$" + frmScanner.new_value;
+            frmPayNow.update_cash();
             frmPayNow.Show();
         }
 

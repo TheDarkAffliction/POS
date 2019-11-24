@@ -16,15 +16,18 @@ namespace Maybe_1
         public static void update()
         {
             string output = gross.ToString("#.00", CultureInfo.InvariantCulture);
+            if (output==".00") { output = "0.00"; }
             frmMain.tbxGross.Text = "$" + output;
 
             double HST = gross / 100 * 13;
             output = HST.ToString("#.00", CultureInfo.InvariantCulture);
+            if (output == ".00") { output = "0.00"; }
             frmMain.tbxHST.Text = "$" + output;
 
             total = gross + HST;
             output = total.ToString("#.00", CultureInfo.InvariantCulture);
             frmMain.tbxTotal.Text = "$" + (gross+(gross/100*13)-gross*(frmDiscount.discount/100)).ToString("#.00",CultureInfo.InvariantCulture);
+            if (frmMain.tbxTotal.Text == "$.00") { frmMain.tbxTotal.Text = "$0.00"; }
 
             frmMain.tbxDiscount.Text = frmDiscount.discount.ToString() + "%";
 
