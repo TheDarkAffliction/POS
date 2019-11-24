@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Drawing;
-
 namespace Maybe_1
 {
     public partial class frmMain : Form
@@ -20,8 +18,8 @@ namespace Maybe_1
             
         }
 
-
-
+        public static frmPayNow frmPayNow = new frmPayNow();
+        public static frmDiscount frmDiscount = new frmDiscount();
 
         public frmMain()
         {
@@ -48,10 +46,8 @@ namespace Maybe_1
             }
 
             tbxTill.Text = frmLogin.Globals.tillNo[0];
-
         }
 
-        public static frmPayNow frmPayNow = new frmPayNow();
         private void btnPayNow_Click(object sender, EventArgs e)
         {
             frmPayNow.Show();
@@ -74,9 +70,10 @@ namespace Maybe_1
             //tmrLoad.Enabled = false;
         }
 
+
         private void btnDiscount_Click(object sender, EventArgs e)
         {
-            new frmDiscount().Show();
+            frmDiscount.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)

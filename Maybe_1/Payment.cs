@@ -21,13 +21,22 @@ namespace Maybe_1
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            frmMain.frmPayNow.Hide();
+            frmMain.frmDiscount.Hide();
+            frmScanner.frmMain.tblpMain.Controls.Clear();
+            frmScanner.total = 0;
+            frmScanner.discount = 0;
+            frmScanner.gross = 0;
+            frmScanner.frmMain.tbxDiscount.Text = "0%";
+            frmScanner.update();
         }
 
         private void frmPayment_Load(object sender, EventArgs e)
         {
-
+            tbxBalance.Text = frmMain.frmPayNow.tbxBalance.Text ;
             tbxTotal.Text = "$" + (frmScanner.gross + (frmScanner.gross / 100 * 13) - frmScanner.gross * (frmDiscount.discount / 100)).ToString("#.00", CultureInfo.InvariantCulture);
+            tbxChange.Text = "$" + (Convert.ToDouble(tbxBalance.Text.Replace("$", "")) - Convert.ToDouble(tbxTotal.Text.Replace("$", ""))).ToString();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
