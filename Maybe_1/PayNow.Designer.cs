@@ -106,6 +106,7 @@
             this.btnDebit.TabIndex = 9;
             this.btnDebit.Text = "Debit";
             this.btnDebit.UseVisualStyleBackColor = true;
+            this.btnDebit.Click += new System.EventHandler(this.btnDebit_Click);
             // 
             // btnCredit
             // 
