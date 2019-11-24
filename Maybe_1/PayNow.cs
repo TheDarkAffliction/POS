@@ -16,6 +16,7 @@ namespace Maybe_1
     {
         public static frmPayment frmPayment = new frmPayment();
         public static frmCash frmCash = new frmCash();
+        public static frmDebit frmDebit = new frmDebit();
         public frmPayNow()
         {
             InitializeComponent();
@@ -23,7 +24,8 @@ namespace Maybe_1
 
         public void update_cash()
         {
-           double var1 = Convert.ToDouble(frmScanner.frmMain.tbxBalance.Text.Replace("$", ""));
+           double var1 = Convert.ToDouble(frmMain.frmPayNow.tbxBalance.Text.Replace("$", ""));
+            Console.WriteLine(var1);
            tbxBalance.Text = "$" + ((frmCash.total / 100) + var1).ToString("#.00", CultureInfo.InvariantCulture);
            if(((frmCash.total / 100) + var1) >= Convert.ToDouble(frmMain.frmPayNow.tbxTotal.Text.Replace("$","")))
             {
@@ -31,7 +33,7 @@ namespace Maybe_1
             }
         }
 
-        public void update()
+        public void update_debit()
         {
 
         }
@@ -49,7 +51,13 @@ namespace Maybe_1
 
         private void btnCash_Click(object sender, EventArgs e)
         {
+            frmCash.total = 0;
             frmCash.Show();
+        }
+
+        private void btnDebit_Click(object sender, EventArgs e)
+        {
+            frmDebit.Show();
         }
     }
 }
