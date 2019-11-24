@@ -57,7 +57,7 @@ namespace Maybe_1
 
                 if (i == 0)
                 {
-                    frmMain.tblpMain.Controls.Add(new TextBox { Text = "1", Width = 60, TextAlign = HorizontalAlignment.Right, Font = new Font(label.Font.FontFamily, 14) });
+                    frmMain.tblpMain.Controls.Add(new TextBox { Text = "1", Width = 60, TextAlign = HorizontalAlignment.Right, Font = new Font(label.Font.FontFamily, 14), TabIndex = 10});
                 }
                 else
                 {

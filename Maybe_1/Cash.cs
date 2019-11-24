@@ -143,5 +143,10 @@ namespace Maybe_1
         {
             total = 0;
         }
+
+        private void tbxTotal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
