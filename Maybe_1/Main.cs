@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Globalization;
+
 namespace Maybe_1
 {
     public partial class frmMain : Form
@@ -50,6 +52,8 @@ namespace Maybe_1
 
         private void btnPayNow_Click(object sender, EventArgs e)
         {
+            frmPayNow.tbxTotal.Text = "$" + (frmScanner.gross + (frmScanner.gross / 100 * 13) - frmScanner.gross * (frmDiscount.discount / 100)).ToString("#.00", CultureInfo.InvariantCulture);
+            frmPayNow.tbxBalance.Text = "$" + frmScanner.new_value;
             frmPayNow.Show();
         }
 

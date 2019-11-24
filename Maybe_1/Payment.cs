@@ -28,7 +28,9 @@ namespace Maybe_1
             frmScanner.total = 0;
             frmScanner.discount = 0;
             frmScanner.gross = 0;
-            frmScanner.frmMain.tbxDiscount.Text = "0%";
+            frmDiscount.discount = 0;
+            frmScanner.new_value = 0;
+            
             frmScanner.update();
         }
 
@@ -43,5 +45,6 @@ namespace Maybe_1
         {
             this.Hide();
         }
+
     }
 }

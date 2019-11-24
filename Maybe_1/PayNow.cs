@@ -15,6 +15,7 @@ namespace Maybe_1
     public partial class frmPayNow : Form
     {
         public static frmPayment frmPayment = new frmPayment();
+        public static frmCash frmCash = new frmCash();
         public frmPayNow()
         {
             InitializeComponent();
@@ -48,7 +49,7 @@ namespace Maybe_1
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-            new frmCash().Show();
+            frmCash.Show();
         }
     }
 }
