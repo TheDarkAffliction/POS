@@ -28,71 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnMove = new System.Windows.Forms.Button();
+            this.pctrLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // Debit
+            // label1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Debit";
-            this.Text = "Debit";
-            this.Load += new System.EventHandler(this.Debit_Load);
-            this.ResumeLayout(false);
-=======
-            this.btnNext = new System.Windows.Forms.Button();
-            this.lblInsert = new System.Windows.Forms.Label();
-            this.ptrbxLogo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrbxLogo)).BeginInit();
-            this.SuspendLayout();
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(545, 146);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Please Enter\r\nCard when Ready";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnNext
+            // btnMove
             // 
-            this.btnNext.Location = new System.Drawing.Point(592, 369);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(196, 69);
-            this.btnNext.TabIndex = 0;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            this.btnMove.Location = new System.Drawing.Point(513, 331);
+            this.btnMove.Name = "btnMove";
+            this.btnMove.Size = new System.Drawing.Size(75, 23);
+            this.btnMove.TabIndex = 1;
+            this.btnMove.Text = "Next";
+            this.btnMove.UseVisualStyleBackColor = true;
+            this.btnMove.Click += new System.EventHandler(this.btnMove_Click);
             // 
-            // lblInsert
+            // pctrLogo
             // 
-            this.lblInsert.AutoSize = true;
-            this.lblInsert.BackColor = System.Drawing.Color.Transparent;
-            this.lblInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInsert.Location = new System.Drawing.Point(146, 152);
-            this.lblInsert.Name = "lblInsert";
-            this.lblInsert.Size = new System.Drawing.Size(545, 146);
-            this.lblInsert.TabIndex = 1;
-            this.lblInsert.Text = "Please Insert \r\nCard when Ready";
-            this.lblInsert.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // ptrbxLogo
-            // 
-            this.ptrbxLogo.Image = global::Maybe_1.Properties.Resources.Logo_Cropped;
-            this.ptrbxLogo.Location = new System.Drawing.Point(25, 12);
-            this.ptrbxLogo.Name = "ptrbxLogo";
-            this.ptrbxLogo.Size = new System.Drawing.Size(235, 104);
-            this.ptrbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrbxLogo.TabIndex = 2;
-            this.ptrbxLogo.TabStop = false;
+            this.pctrLogo.Image = global::Maybe_1.Properties.Resources.Logo_Cropped;
+            this.pctrLogo.Location = new System.Drawing.Point(12, 12);
+            this.pctrLogo.Name = "pctrLogo";
+            this.pctrLogo.Size = new System.Drawing.Size(100, 50);
+            this.pctrLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrLogo.TabIndex = 2;
+            this.pctrLogo.TabStop = false;
             // 
             // frmDebit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblInsert);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.ptrbxLogo);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.pctrLogo);
+            this.Controls.Add(this.btnMove);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDebit";
             this.Text = "Debit";
-            ((System.ComponentModel.ISupportInitialize)(this.ptrbxLogo)).EndInit();
+            this.Load += new System.EventHandler(this.Debit_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pctrLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
->>>>>>> 607a50f3eb162b91ee197bd4e9bb3b94d47c0dc7
 
         }
 
@@ -101,5 +88,8 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lblInsert;
         private System.Windows.Forms.PictureBox ptrbxLogo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnMove;
+        private System.Windows.Forms.PictureBox pctrLogo;
     }
 }
