@@ -83,5 +83,10 @@ namespace Maybe_1
         {
 
         }
+
+        private void tblpMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

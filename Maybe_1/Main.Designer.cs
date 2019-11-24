@@ -66,47 +66,55 @@
             // btnPower
             // 
             this.btnPower.Location = new System.Drawing.Point(1896, 15);
-            this.btnPower.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPower.Margin = new System.Windows.Forms.Padding(4);
             this.btnPower.Name = "btnPower";
             this.btnPower.Size = new System.Drawing.Size(200, 185);
-            this.btnPower.TabIndex = 0;
+            this.btnPower.TabIndex = 11;
             this.btnPower.Text = "Power";
             this.btnPower.UseVisualStyleBackColor = true;
             this.btnPower.Click += new System.EventHandler(this.btnPower_Click);
             // 
             // btnPayNow
             // 
-            this.btnPayNow.BackColor = System.Drawing.Color.Transparent;
+            this.btnPayNow.BackColor = System.Drawing.Color.Firebrick;
             this.btnPayNow.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnPayNow.Font = new System.Drawing.Font("Myanmar Text", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.btnPayNow.ForeColor = System.Drawing.Color.White;
             this.btnPayNow.Location = new System.Drawing.Point(1864, 646);
-            this.btnPayNow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPayNow.Margin = new System.Windows.Forms.Padding(4);
             this.btnPayNow.Name = "btnPayNow";
             this.btnPayNow.Size = new System.Drawing.Size(232, 399);
-            this.btnPayNow.TabIndex = 1;
+            this.btnPayNow.TabIndex = 0;
             this.btnPayNow.Text = "Pay Now";
             this.btnPayNow.UseVisualStyleBackColor = false;
             this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
             // btnCurrentDeals
             // 
+            this.btnCurrentDeals.BackColor = System.Drawing.Color.Silver;
+            this.btnCurrentDeals.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCurrentDeals.Font = new System.Drawing.Font("Myanmar Text", 16F, System.Drawing.FontStyle.Bold);
             this.btnCurrentDeals.Location = new System.Drawing.Point(1864, 486);
-            this.btnCurrentDeals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCurrentDeals.Margin = new System.Windows.Forms.Padding(4);
             this.btnCurrentDeals.Name = "btnCurrentDeals";
             this.btnCurrentDeals.Size = new System.Drawing.Size(232, 153);
-            this.btnCurrentDeals.TabIndex = 0;
+            this.btnCurrentDeals.TabIndex = 1;
             this.btnCurrentDeals.Text = "Current Deals";
-            this.btnCurrentDeals.UseVisualStyleBackColor = true;
+            this.btnCurrentDeals.UseVisualStyleBackColor = false;
             this.btnCurrentDeals.Click += new System.EventHandler(this.btnCurrentDeals_Click);
             // 
             // btnDiscount
             // 
+            this.btnDiscount.BackColor = System.Drawing.Color.Silver;
+            this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnDiscount.Font = new System.Drawing.Font("Myanmar Text", 16F, System.Drawing.FontStyle.Bold);
             this.btnDiscount.Location = new System.Drawing.Point(1864, 322);
-            this.btnDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDiscount.Margin = new System.Windows.Forms.Padding(4);
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.Size = new System.Drawing.Size(232, 156);
-            this.btnDiscount.TabIndex = 0;
+            this.btnDiscount.TabIndex = 2;
             this.btnDiscount.Text = "Discount";
-            this.btnDiscount.UseVisualStyleBackColor = true;
+            this.btnDiscount.UseVisualStyleBackColor = false;
             this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // tmrLoad
@@ -141,12 +149,11 @@
             this.tbxTotal.BackColor = System.Drawing.SystemColors.Window;
             this.tbxTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxTotal.Location = new System.Drawing.Point(1372, 997);
-            this.tbxTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxTotal.Margin = new System.Windows.Forms.Padding(4);
             this.tbxTotal.Name = "tbxTotal";
             this.tbxTotal.ReadOnly = true;
             this.tbxTotal.Size = new System.Drawing.Size(212, 46);
-            this.tbxTotal.TabIndex = 2;
-            this.tbxTotal.TabStop = false;
+            this.tbxTotal.TabIndex = 4;
             this.tbxTotal.Text = "$0.00";
             // 
             // tbxBalance
@@ -154,10 +161,10 @@
             this.tbxBalance.BackColor = System.Drawing.SystemColors.Window;
             this.tbxBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxBalance.Location = new System.Drawing.Point(1623, 997);
-            this.tbxBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxBalance.Margin = new System.Windows.Forms.Padding(4);
             this.tbxBalance.Name = "tbxBalance";
             this.tbxBalance.Size = new System.Drawing.Size(212, 46);
-            this.tbxBalance.TabIndex = 6;
+            this.tbxBalance.TabIndex = 5;
             this.tbxBalance.Text = "$0.00";
             // 
             // lblItemNumber
@@ -191,9 +198,9 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 796F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
             this.tblpMain.Location = new System.Drawing.Point(81, 335);
-            this.tblpMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tblpMain.Margin = new System.Windows.Forms.Padding(4);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
             this.tblpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -297,7 +304,8 @@
             this.tblpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tblpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tblpMain.Size = new System.Drawing.Size(1741, 594);
-            this.tblpMain.TabIndex = 11;
+            this.tblpMain.TabIndex = 3;
+            this.tblpMain.Paint += new System.Windows.Forms.PaintEventHandler(this.tblpMain_Paint);
             // 
             // lblDescription
             // 
@@ -337,7 +345,7 @@
             this.pbxLogo.BackColor = System.Drawing.Color.Transparent;
             this.pbxLogo.Image = global::Maybe_1.Properties.Resources.Logo_Cropped;
             this.pbxLogo.Location = new System.Drawing.Point(16, 15);
-            this.pbxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(537, 249);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -347,19 +355,19 @@
             // tbxHST
             // 
             this.tbxHST.Location = new System.Drawing.Point(1089, 997);
-            this.tbxHST.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxHST.Margin = new System.Windows.Forms.Padding(4);
             this.tbxHST.Name = "tbxHST";
             this.tbxHST.Size = new System.Drawing.Size(132, 22);
-            this.tbxHST.TabIndex = 17;
+            this.tbxHST.TabIndex = 6;
             this.tbxHST.Text = "$0.00";
             // 
             // tbxGross
             // 
             this.tbxGross.Location = new System.Drawing.Point(948, 997);
-            this.tbxGross.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxGross.Margin = new System.Windows.Forms.Padding(4);
             this.tbxGross.Name = "tbxGross";
             this.tbxGross.Size = new System.Drawing.Size(132, 22);
-            this.tbxGross.TabIndex = 18;
+            this.tbxGross.TabIndex = 6;
             this.tbxGross.Text = "$0.00";
             // 
             // lblGross
@@ -388,11 +396,12 @@
             // 
             this.tbxDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxDate.Location = new System.Drawing.Point(597, 150);
-            this.tbxDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxDate.Margin = new System.Windows.Forms.Padding(4);
             this.tbxDate.Name = "tbxDate";
             this.tbxDate.ReadOnly = true;
             this.tbxDate.Size = new System.Drawing.Size(160, 34);
-            this.tbxDate.TabIndex = 21;
+            this.tbxDate.TabIndex = 7;
+            this.tbxDate.TabStop = false;
             // 
             // lblDate
             // 
@@ -421,21 +430,23 @@
             // 
             this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxName.Location = new System.Drawing.Point(597, 78);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(4);
             this.tbxName.Name = "tbxName";
             this.tbxName.ReadOnly = true;
             this.tbxName.Size = new System.Drawing.Size(160, 34);
-            this.tbxName.TabIndex = 24;
+            this.tbxName.TabIndex = 7;
+            this.tbxName.TabStop = false;
             // 
             // tbxTill
             // 
             this.tbxTill.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxTill.Location = new System.Drawing.Point(597, 228);
-            this.tbxTill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxTill.Margin = new System.Windows.Forms.Padding(4);
             this.tbxTill.Name = "tbxTill";
             this.tbxTill.ReadOnly = true;
             this.tbxTill.Size = new System.Drawing.Size(160, 34);
-            this.tbxTill.TabIndex = 26;
+            this.tbxTill.TabIndex = 7;
+            this.tbxTill.TabStop = false;
             // 
             // lblTill
             // 
@@ -466,10 +477,10 @@
             // tbxDiscount
             // 
             this.tbxDiscount.Location = new System.Drawing.Point(1231, 997);
-            this.tbxDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxDiscount.Margin = new System.Windows.Forms.Padding(4);
             this.tbxDiscount.Name = "tbxDiscount";
             this.tbxDiscount.Size = new System.Drawing.Size(132, 22);
-            this.tbxDiscount.TabIndex = 29;
+            this.tbxDiscount.TabIndex = 6;
             this.tbxDiscount.Text = "0%";
             // 
             // label1
@@ -487,7 +498,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1982, 1078);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbxDiscount);
@@ -517,7 +528,7 @@
             this.Controls.Add(this.tbxTotal);
             this.Controls.Add(this.btnPayNow);
             this.Controls.Add(this.btnPower);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Text = "Source For Sports";
             this.Load += new System.EventHandler(this.frmMain_Load);
