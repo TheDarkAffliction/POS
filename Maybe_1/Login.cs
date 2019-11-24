@@ -59,7 +59,7 @@ namespace Maybe_1
             {
                 frmScanner.Show();
                 location = Globals.ID.FindIndex(x => x == tbxEnterID.Text);
-                this.Close();
+                this.Hide();
 
             }
             else if (Globals.adminID.Contains(tbxEnterID.Text))
@@ -67,7 +67,7 @@ namespace Maybe_1
                 frmAdmin.Show();
                 location = Globals.adminID.FindIndex(x => x == tbxEnterID.Text);
                 admin = true;
-                this.Close();
+                this.Hide();
             }                               
         }
 

@@ -47,7 +47,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Please enter\r\ncard when ready";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnMove
             // 
@@ -87,7 +86,6 @@
             this.textBox1.Size = new System.Drawing.Size(818, 15);
             this.textBox1.TabIndex = 3;
             this.textBox1.TabStop = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnBack
             // 
@@ -98,7 +96,6 @@
             this.btnBack.TabIndex = 4;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmDebit
             // 

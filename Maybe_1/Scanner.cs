@@ -1,7 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
-using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
+using System.IO;
+
+using System.Resources;
+using System.Globalization;
 
 namespace Maybe_1
 {
@@ -16,18 +26,15 @@ namespace Maybe_1
         public static void update()
         {
             string output = gross.ToString("#.00", CultureInfo.InvariantCulture);
-            if (output==".00") { output = "0.00"; }
             frmMain.tbxGross.Text = "$" + output;
 
             double HST = gross / 100 * 13;
             output = HST.ToString("#.00", CultureInfo.InvariantCulture);
-            if (output == ".00") { output = "0.00"; }
             frmMain.tbxHST.Text = "$" + output;
 
             total = gross + HST;
             output = total.ToString("#.00", CultureInfo.InvariantCulture);
             frmMain.tbxTotal.Text = "$" + (gross+(gross/100*13)-gross*(frmDiscount.discount/100)).ToString("#.00",CultureInfo.InvariantCulture);
-            if (frmMain.tbxTotal.Text == "$.00") { frmMain.tbxTotal.Text = "$0.00"; }
 
             frmMain.tbxDiscount.Text = frmDiscount.discount.ToString() + "%";
 
@@ -35,6 +42,8 @@ namespace Maybe_1
 
 
 
+        List<int> quantities = new List<int>();
+        List<string> itemnumbers = new List<string>();
         public void scan(string itemnumber, string description, double price)
         {
             Label label = new Label();
@@ -60,12 +69,14 @@ namespace Maybe_1
 
                 if (i == 0)
                 {
-                    frmMain.tblpMain.Controls.Add(new TextBox { Text = "1", Width = 60, TextAlign = HorizontalAlignment.Right, Font = new Font(label.Font.FontFamily, 14), TabIndex = 10});
+                    
+                    frmMain.tblpMain.Controls.Add(new TextBox { Text = "1", Width = 60, TextAlign = HorizontalAlignment.Right, Font = new Font(label.Font.FontFamily, 14), TabStop = false});
                 }
                 else
                 {
                     frmMain.tblpMain.Controls.Add(new Label { Text = text, Font = new Font(label.Font.FontFamily, 14), AutoSize = true, TextAlign = ContentAlignment.MiddleRight });
                 }
+
             }
             label.Dispose();
 
