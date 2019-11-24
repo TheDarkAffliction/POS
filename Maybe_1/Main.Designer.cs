@@ -65,6 +65,7 @@
             // 
             // btnPower
             // 
+            this.btnPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPower.Location = new System.Drawing.Point(1896, 15);
             this.btnPower.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPower.Name = "btnPower";
@@ -79,6 +80,7 @@
             // 
             this.btnPayNow.BackColor = System.Drawing.Color.Transparent;
             this.btnPayNow.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnPayNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayNow.Location = new System.Drawing.Point(1864, 646);
             this.btnPayNow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPayNow.Name = "btnPayNow";
@@ -90,6 +92,8 @@
             // 
             // btnCurrentDeals
             // 
+            this.btnCurrentDeals.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCurrentDeals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCurrentDeals.Location = new System.Drawing.Point(1864, 486);
             this.btnCurrentDeals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCurrentDeals.Name = "btnCurrentDeals";
@@ -101,6 +105,8 @@
             // 
             // btnDiscount
             // 
+            this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiscount.Location = new System.Drawing.Point(1864, 322);
             this.btnDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDiscount.Name = "btnDiscount";
@@ -493,7 +499,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1585, 862);
+            this.ClientSize = new System.Drawing.Size(1982, 1078);
             this.ControlBox = false;
             this.Controls.Add(this.lblSportCo);
             this.Controls.Add(this.tbxDiscount);
