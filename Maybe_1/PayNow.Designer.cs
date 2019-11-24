@@ -116,6 +116,7 @@
             this.btnCredit.TabIndex = 10;
             this.btnCredit.Text = "Credit";
             this.btnCredit.UseVisualStyleBackColor = true;
+            this.btnCredit.Click += new System.EventHandler(this.btnCredit_Click);
             // 
             // lblBalance
             // 

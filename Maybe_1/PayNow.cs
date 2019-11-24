@@ -52,10 +52,16 @@ namespace Maybe_1
         private void btnCash_Click(object sender, EventArgs e)
         {
             frmCash.total = 0;
+            frmCash.tbxTotal.Text = "$0.00";
             frmCash.Show();
         }
 
         private void btnDebit_Click(object sender, EventArgs e)
+        {
+            frmDebit.Show();
+        }
+
+        private void btnCredit_Click(object sender, EventArgs e)
         {
             frmDebit.Show();
         }
