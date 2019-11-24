@@ -28,6 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+            this.SuspendLayout();
+            // 
+            // Debit
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Debit";
+            this.Text = "Debit";
+            this.Load += new System.EventHandler(this.Debit_Load);
+            this.ResumeLayout(false);
+=======
             this.btnNext = new System.Windows.Forms.Button();
             this.lblInsert = new System.Windows.Forms.Label();
             this.ptrbxLogo = new System.Windows.Forms.PictureBox();
@@ -79,6 +92,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptrbxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+>>>>>>> 607a50f3eb162b91ee197bd4e9bb3b94d47c0dc7
 
         }
 

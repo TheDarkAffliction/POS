@@ -17,11 +17,17 @@ namespace Maybe_1
             InitializeComponent();
         }
 
+<<<<<<< HEAD
+        private void Debit_Load(object sender, EventArgs e)
+        {
+
+=======
         private void btnNext_Click(object sender, EventArgs e)
         {
             frmPayNow.frmPayment.Show();
             frmPayNow.frmPayment.tbxBalance.Text = frmPayNow.frmPayment.tbxTotal.Text;
             frmPayNow.frmPayment.tbxChange.Text = "$0.00";
+>>>>>>> 607a50f3eb162b91ee197bd4e9bb3b94d47c0dc7
         }
     }
 }
