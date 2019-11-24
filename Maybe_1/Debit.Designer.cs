@@ -61,7 +61,7 @@
             this.ptrbxLogo.Image = global::Maybe_1.Properties.Resources.Logo_Cropped;
             this.ptrbxLogo.Location = new System.Drawing.Point(25, 12);
             this.ptrbxLogo.Name = "ptrbxLogo";
-            this.ptrbxLogo.Size = new System.Drawing.Size(300, 137);
+            this.ptrbxLogo.Size = new System.Drawing.Size(235, 104);
             this.ptrbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrbxLogo.TabIndex = 2;
             this.ptrbxLogo.TabStop = false;
