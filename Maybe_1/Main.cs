@@ -38,7 +38,7 @@ namespace Maybe_1
             DateTime thisDay = DateTime.Today;
             tbxDate.Text = thisDay.ToString("d");
 
-            if(frmLogin.admin)
+            if (frmLogin.admin)
             {
                 tbxName.Text = frmLogin.Globals.adminFirstNames[frmLogin.location] + " " + frmLogin.Globals.adminLastNames[frmLogin.location];
             }
@@ -77,6 +77,11 @@ namespace Maybe_1
         private void btnDiscount_Click(object sender, EventArgs e)
         {
             new frmDiscount().Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

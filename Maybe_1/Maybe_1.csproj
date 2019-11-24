@@ -71,6 +71,7 @@
     <Compile Include="Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Files\StoreDetails.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
