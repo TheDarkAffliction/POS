@@ -101,5 +101,10 @@ namespace Maybe_1
         {
             frmDiscount.Show();
         }
+
+        private void btnPreset1_Click(object sender, EventArgs e)
+        {
+            frmScanner.scan(" ", "Skate Sharpening", 5.99);
+        }
     }
 }

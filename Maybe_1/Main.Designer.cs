@@ -62,26 +62,38 @@
             this.lblSportCo = new System.Windows.Forms.Label();
             this.tbxTime = new System.Windows.Forms.TextBox();
             this.tmrTimer = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnEditPreset = new System.Windows.Forms.Button();
+            this.btnPreset6 = new System.Windows.Forms.Button();
+            this.btnPreset5 = new System.Windows.Forms.Button();
+            this.btnPreset4 = new System.Windows.Forms.Button();
+            this.btnPreset3 = new System.Windows.Forms.Button();
+            this.btnPreset2 = new System.Windows.Forms.Button();
+            this.btnPreset1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPower
             // 
+            this.btnPower.BackColor = System.Drawing.Color.DarkRed;
             this.btnPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPower.Location = new System.Drawing.Point(1422, 12);
+            this.btnPower.ForeColor = System.Drawing.Color.White;
+            this.btnPower.Location = new System.Drawing.Point(12, 776);
             this.btnPower.Name = "btnPower";
-            this.btnPower.Size = new System.Drawing.Size(150, 150);
+            this.btnPower.Size = new System.Drawing.Size(75, 75);
             this.btnPower.TabIndex = 0;
             this.btnPower.TabStop = false;
             this.btnPower.Text = "Power";
-            this.btnPower.UseVisualStyleBackColor = true;
+            this.btnPower.UseVisualStyleBackColor = false;
             this.btnPower.Click += new System.EventHandler(this.btnPower_Click);
             // 
             // btnPayNow
             // 
-            this.btnPayNow.BackColor = System.Drawing.Color.Transparent;
-            this.btnPayNow.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnPayNow.BackColor = System.Drawing.Color.Green;
+            this.btnPayNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayNow.ForeColor = System.Drawing.Color.White;
             this.btnPayNow.Location = new System.Drawing.Point(1398, 525);
             this.btnPayNow.Name = "btnPayNow";
             this.btnPayNow.Size = new System.Drawing.Size(174, 324);
@@ -92,26 +104,30 @@
             // 
             // btnFlags
             // 
-            this.btnFlags.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnFlags.BackColor = System.Drawing.Color.Maroon;
+            this.btnFlags.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFlags.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFlags.ForeColor = System.Drawing.Color.White;
             this.btnFlags.Location = new System.Drawing.Point(1398, 395);
             this.btnFlags.Name = "btnFlags";
             this.btnFlags.Size = new System.Drawing.Size(174, 124);
             this.btnFlags.TabIndex = 1;
             this.btnFlags.Text = "Flags";
-            this.btnFlags.UseVisualStyleBackColor = true;
+            this.btnFlags.UseVisualStyleBackColor = false;
             this.btnFlags.Click += new System.EventHandler(this.btnFlags_Click);
             // 
             // btnDiscount
             // 
-            this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnDiscount.BackColor = System.Drawing.Color.Maroon;
+            this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscount.ForeColor = System.Drawing.Color.White;
             this.btnDiscount.Location = new System.Drawing.Point(1398, 262);
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.Size = new System.Drawing.Size(174, 127);
             this.btnDiscount.TabIndex = 2;
             this.btnDiscount.Text = "Discount";
-            this.btnDiscount.UseVisualStyleBackColor = true;
+            this.btnDiscount.UseVisualStyleBackColor = false;
             this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // tmrLoad
@@ -192,7 +208,7 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
             this.tblpMain.Location = new System.Drawing.Point(61, 272);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
@@ -303,7 +319,7 @@
             // 
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(428, 230);
+            this.lblDescription.Location = new System.Drawing.Point(409, 230);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(120, 25);
             this.lblDescription.TabIndex = 12;
@@ -313,7 +329,7 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(1024, 230);
+            this.lblPrice.Location = new System.Drawing.Point(1007, 230);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(93, 25);
             this.lblPrice.TabIndex = 13;
@@ -323,7 +339,7 @@
             // 
             this.lblTableTotal.AutoSize = true;
             this.lblTableTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTableTotal.Location = new System.Drawing.Point(1212, 230);
+            this.lblTableTotal.Location = new System.Drawing.Point(1187, 230);
             this.lblTableTotal.Name = "lblTableTotal";
             this.lblTableTotal.Size = new System.Drawing.Size(92, 25);
             this.lblTableTotal.TabIndex = 14;
@@ -491,6 +507,90 @@
             this.tmrTimer.Interval = 1000;
             this.tmrTimer.Tick += new System.EventHandler(this.tmrTimer_Tick);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(1383, -2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(202, 878);
+            this.textBox1.TabIndex = 32;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(711, -14);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(681, 235);
+            this.textBox2.TabIndex = 33;
+            // 
+            // btnEditPreset
+            // 
+            this.btnEditPreset.Location = new System.Drawing.Point(93, 776);
+            this.btnEditPreset.Name = "btnEditPreset";
+            this.btnEditPreset.Size = new System.Drawing.Size(190, 75);
+            this.btnEditPreset.TabIndex = 34;
+            this.btnEditPreset.Text = "Edit Presets";
+            this.btnEditPreset.UseVisualStyleBackColor = true;
+            // 
+            // btnPreset6
+            // 
+            this.btnPreset6.Location = new System.Drawing.Point(1302, 122);
+            this.btnPreset6.Name = "btnPreset6";
+            this.btnPreset6.Size = new System.Drawing.Size(75, 75);
+            this.btnPreset6.TabIndex = 35;
+            this.btnPreset6.Text = "Preset 6";
+            this.btnPreset6.UseVisualStyleBackColor = true;
+            // 
+            // btnPreset5
+            // 
+            this.btnPreset5.Location = new System.Drawing.Point(1221, 122);
+            this.btnPreset5.Name = "btnPreset5";
+            this.btnPreset5.Size = new System.Drawing.Size(75, 75);
+            this.btnPreset5.TabIndex = 36;
+            this.btnPreset5.Text = "Preset 5";
+            this.btnPreset5.UseVisualStyleBackColor = true;
+            // 
+            // btnPreset4
+            // 
+            this.btnPreset4.Location = new System.Drawing.Point(1140, 122);
+            this.btnPreset4.Name = "btnPreset4";
+            this.btnPreset4.Size = new System.Drawing.Size(75, 75);
+            this.btnPreset4.TabIndex = 37;
+            this.btnPreset4.Text = "Preset 4";
+            this.btnPreset4.UseVisualStyleBackColor = true;
+            // 
+            // btnPreset3
+            // 
+            this.btnPreset3.Location = new System.Drawing.Point(1059, 122);
+            this.btnPreset3.Name = "btnPreset3";
+            this.btnPreset3.Size = new System.Drawing.Size(75, 75);
+            this.btnPreset3.TabIndex = 38;
+            this.btnPreset3.Text = "Preset 3";
+            this.btnPreset3.UseVisualStyleBackColor = true;
+            // 
+            // btnPreset2
+            // 
+            this.btnPreset2.Location = new System.Drawing.Point(978, 122);
+            this.btnPreset2.Name = "btnPreset2";
+            this.btnPreset2.Size = new System.Drawing.Size(75, 75);
+            this.btnPreset2.TabIndex = 39;
+            this.btnPreset2.Text = "Preset 2";
+            this.btnPreset2.UseVisualStyleBackColor = true;
+            // 
+            // btnPreset1
+            // 
+            this.btnPreset1.Location = new System.Drawing.Point(897, 122);
+            this.btnPreset1.Name = "btnPreset1";
+            this.btnPreset1.Size = new System.Drawing.Size(75, 75);
+            this.btnPreset1.TabIndex = 40;
+            this.btnPreset1.Text = "Sharpen Skates";
+            this.btnPreset1.UseVisualStyleBackColor = true;
+            this.btnPreset1.Click += new System.EventHandler(this.btnPreset1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,6 +598,15 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.ControlBox = false;
+            this.Controls.Add(this.btnPreset1);
+            this.Controls.Add(this.btnPreset2);
+            this.Controls.Add(this.btnPreset3);
+            this.Controls.Add(this.btnPreset4);
+            this.Controls.Add(this.btnPreset5);
+            this.Controls.Add(this.btnPreset6);
+            this.Controls.Add(this.btnEditPreset);
+            this.Controls.Add(this.btnPower);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.tbxTime);
             this.Controls.Add(this.lblSportCo);
             this.Controls.Add(this.tbxDiscount);
@@ -526,7 +635,7 @@
             this.Controls.Add(this.btnFlags);
             this.Controls.Add(this.tbxTotal);
             this.Controls.Add(this.btnPayNow);
-            this.Controls.Add(this.btnPower);
+            this.Controls.Add(this.textBox1);
             this.Name = "frmMain";
             this.Text = "Source For Sports";
             this.Load += new System.EventHandler(this.frmMain_Load);
@@ -571,6 +680,15 @@
         private System.Windows.Forms.Label lblSportCo;
         private System.Windows.Forms.TextBox tbxTime;
         private System.Windows.Forms.Timer tmrTimer;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnEditPreset;
+        private System.Windows.Forms.Button btnPreset6;
+        private System.Windows.Forms.Button btnPreset5;
+        private System.Windows.Forms.Button btnPreset4;
+        private System.Windows.Forms.Button btnPreset3;
+        private System.Windows.Forms.Button btnPreset2;
+        private System.Windows.Forms.Button btnPreset1;
     }
 }
 

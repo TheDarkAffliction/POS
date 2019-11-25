@@ -44,7 +44,7 @@ namespace Maybe_1
         //Description, Item number, quantity, price
         public static List<double> receiptnumbers = new List<double>();
         public static List<string> receiptstrings = new List<string>();
-        public void scan(string itemnumber, string description, double price)
+        public static void scan(string itemnumber, string description, double price)
         {
             Label label = new Label();
             for (int i = 0; i <= 4; i++)
