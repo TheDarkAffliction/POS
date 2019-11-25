@@ -29,6 +29,7 @@ namespace Maybe_1
             tbxFirstName.Text = "";
             tbxLastName.Text = "";
             tbxID.Text = "";
+            cbxAdmin.Checked = false;
         }
     }
 }

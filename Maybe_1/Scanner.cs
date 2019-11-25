@@ -108,13 +108,9 @@ namespace Maybe_1
             frmMain.tblpMain.Controls.Add(new Label { Text = "aaaaaaaaaa", Anchor = AnchorStyles.Left, AutoSize = true}, 0, 0);
             frmMain.tblpMain.Controls.Add(new Label { Text = "1", Anchor = AnchorStyles.Left, AutoSize = true }, 0, 0);
             */
-            scan("ssssssss", "HS: Nexus 6000 SR Skates (L)", 110.99);
+            scan("1053055", "Bauer Nexus 2N Senior Hockey Skates", 699.99);
         }
 
-        private void btnSoccerBall_Click(object sender, EventArgs e)
-        {
-            scan("sbsbsbsb", "Stewarts Soccer Ball", 21.99);
-        }
 
         public static double new_value = 0;
         private void btnGiftCard_Click(object sender, EventArgs e)
@@ -129,6 +125,26 @@ namespace Maybe_1
         {
             update();
             tmrUpdate.Enabled = false;
+        }
+
+        private void btnWomensShoes_Click(object sender, EventArgs e)
+        {
+            scan("1012A460","Asics GT-1000 8 Women's Running Shoes", 139.99);
+        }
+
+        private void btnHockeyMask_Click(object sender, EventArgs e)
+        {
+            scan("1037080","BAUER 2100 Senior Hockey Facemask",22.99);
+        }
+
+        private void btnHockeyGloves_Click(object sender, EventArgs e)
+        {
+            scan("1046518", "Bauer Nexus Prodigy Youth Hockey Gloves",29.99);
+        }
+
+        private void btnLanyard_Click(object sender, EventArgs e)
+        {
+            scan("100", "Fox 40 Breakaway Lanyard", 1.99);
         }
     }
 }

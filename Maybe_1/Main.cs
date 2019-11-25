@@ -22,7 +22,7 @@ namespace Maybe_1
 
         public static frmPayNow frmPayNow = new frmPayNow();
         public static frmDiscount frmDiscount = new frmDiscount();
-
+        public static frmFlags frmFlags = new frmFlags();
         public frmMain()
         {
             InitializeComponent();
@@ -58,10 +58,6 @@ namespace Maybe_1
             frmPayNow.Show();
         }
 
-        private void btnCurrentDeals_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void tmrLoad_Tick(object sender, EventArgs e)
         {
@@ -89,6 +85,16 @@ namespace Maybe_1
         private void tblpMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnFlags_Click(object sender, EventArgs e)
+        {
+            frmFlags.Show();
+        }
+
+        private void tmrTimer_Tick(object sender, EventArgs e)
+        {
+            tbxTime.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
     }
 }

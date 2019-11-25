@@ -32,5 +32,10 @@ namespace Maybe_1
             frmPayNow.frmPayment.Show();
             this.Hide();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

@@ -60,6 +60,8 @@
             this.lblDiscount = new System.Windows.Forms.Label();
             this.tbxDiscount = new System.Windows.Forms.TextBox();
             this.lblSportCo = new System.Windows.Forms.Label();
+            this.tbxTime = new System.Windows.Forms.TextBox();
+            this.tmrTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +100,7 @@
             this.btnFlags.TabIndex = 1;
             this.btnFlags.Text = "Flags";
             this.btnFlags.UseVisualStyleBackColor = true;
-            this.btnFlags.Click += new System.EventHandler(this.btnCurrentDeals_Click);
+            this.btnFlags.Click += new System.EventHandler(this.btnFlags_Click);
             // 
             // btnDiscount
             // 
@@ -146,6 +148,7 @@
             this.tbxTotal.ReadOnly = true;
             this.tbxTotal.Size = new System.Drawing.Size(160, 38);
             this.tbxTotal.TabIndex = 7;
+            this.tbxTotal.TabStop = false;
             this.tbxTotal.Text = "$0.00";
             // 
             // tbxBalance
@@ -154,8 +157,10 @@
             this.tbxBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxBalance.Location = new System.Drawing.Point(1217, 810);
             this.tbxBalance.Name = "tbxBalance";
+            this.tbxBalance.ReadOnly = true;
             this.tbxBalance.Size = new System.Drawing.Size(160, 38);
             this.tbxBalance.TabIndex = 7;
+            this.tbxBalance.TabStop = false;
             this.tbxBalance.Text = "$0.00";
             // 
             // lblItemNumber
@@ -187,7 +192,7 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tblpMain.Location = new System.Drawing.Point(61, 272);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
@@ -469,12 +474,30 @@
             this.lblSportCo.Text = "Sport Co.";
             this.lblSportCo.Click += new System.EventHandler(this.label1_Click);
             // 
+            // tbxTime
+            // 
+            this.tbxTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxTime.Location = new System.Drawing.Point(566, 122);
+            this.tbxTime.Name = "tbxTime";
+            this.tbxTime.ReadOnly = true;
+            this.tbxTime.Size = new System.Drawing.Size(108, 29);
+            this.tbxTime.TabIndex = 31;
+            this.tbxTime.TabStop = false;
+            // 
+            // tmrTimer
+            // 
+            this.tmrTimer.Enabled = true;
+            this.tmrTimer.Interval = 1000;
+            this.tmrTimer.Tick += new System.EventHandler(this.tmrTimer_Tick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.ControlBox = false;
+            this.Controls.Add(this.tbxTime);
             this.Controls.Add(this.lblSportCo);
             this.Controls.Add(this.tbxDiscount);
             this.Controls.Add(this.lblDiscount);
@@ -545,6 +568,8 @@
         private System.Windows.Forms.Label lblDiscount;
         public System.Windows.Forms.TextBox tbxDiscount;
         private System.Windows.Forms.Label lblSportCo;
+        private System.Windows.Forms.TextBox tbxTime;
+        private System.Windows.Forms.Timer tmrTimer;
     }
 }
 
