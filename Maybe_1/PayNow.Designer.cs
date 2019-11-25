@@ -38,6 +38,8 @@
             this.btnCredit = new System.Windows.Forms.Button();
             this.lblBalance = new System.Windows.Forms.Label();
             this.tbxBalance = new System.Windows.Forms.TextBox();
+            this.radioButtonEmail = new System.Windows.Forms.RadioButton();
+            this.radioButtonPrint = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnBack
@@ -139,12 +141,38 @@
             this.tbxBalance.TabIndex = 11;
             this.tbxBalance.Text = "$0.00";
             // 
+            // radioButtonEmail
+            // 
+            this.radioButtonEmail.AutoSize = true;
+            this.radioButtonEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonEmail.Location = new System.Drawing.Point(660, 414);
+            this.radioButtonEmail.Name = "radioButtonEmail";
+            this.radioButtonEmail.Size = new System.Drawing.Size(118, 24);
+            this.radioButtonEmail.TabIndex = 14;
+            this.radioButtonEmail.TabStop = true;
+            this.radioButtonEmail.Text = "Email receipt";
+            this.radioButtonEmail.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonPrint
+            // 
+            this.radioButtonPrint.AutoSize = true;
+            this.radioButtonPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPrint.Location = new System.Drawing.Point(522, 414);
+            this.radioButtonPrint.Name = "radioButtonPrint";
+            this.radioButtonPrint.Size = new System.Drawing.Size(111, 24);
+            this.radioButtonPrint.TabIndex = 13;
+            this.radioButtonPrint.TabStop = true;
+            this.radioButtonPrint.Text = "Print receipt";
+            this.radioButtonPrint.UseVisualStyleBackColor = true;
+            // 
             // frmPayNow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 461);
             this.ControlBox = false;
+            this.Controls.Add(this.radioButtonEmail);
+            this.Controls.Add(this.radioButtonPrint);
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.tbxBalance);
             this.Controls.Add(this.btnCredit);
@@ -175,5 +203,7 @@
         public System.Windows.Forms.TextBox tbxTotal;
         private System.Windows.Forms.Label lblBalance;
         public System.Windows.Forms.TextBox tbxBalance;
+        private System.Windows.Forms.RadioButton radioButtonEmail;
+        private System.Windows.Forms.RadioButton radioButtonPrint;
     }
 }

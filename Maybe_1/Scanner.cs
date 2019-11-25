@@ -118,7 +118,7 @@ namespace Maybe_1
             string current = frmMain.tbxBalance.Text.Replace("$","");
             new_value = Convert.ToDouble(current);
             new_value += 25;
-            frmMain.tbxBalance.Text = "$" + new_value;
+            frmMain.tbxBalance.Text = "$" + new_value + ".00";
         }
 
         private void tmrUpdate_Tick(object sender, EventArgs e)
