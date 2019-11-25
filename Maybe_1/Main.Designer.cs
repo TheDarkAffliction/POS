@@ -192,7 +192,7 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
             this.tblpMain.Location = new System.Drawing.Point(61, 272);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
@@ -415,7 +415,7 @@
             this.tbxName.Location = new System.Drawing.Point(448, 63);
             this.tbxName.Name = "tbxName";
             this.tbxName.ReadOnly = true;
-            this.tbxName.Size = new System.Drawing.Size(121, 29);
+            this.tbxName.Size = new System.Drawing.Size(226, 29);
             this.tbxName.TabIndex = 24;
             this.tbxName.TabStop = false;
             // 
@@ -461,6 +461,7 @@
             this.tbxDiscount.TabIndex = 29;
             this.tbxDiscount.TabStop = false;
             this.tbxDiscount.Text = "0%";
+            this.tbxDiscount.DoubleClick += new System.EventHandler(this.tbxDiscount_DoubleClick);
             // 
             // lblSportCo
             // 

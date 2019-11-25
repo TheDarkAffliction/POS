@@ -96,5 +96,10 @@ namespace Maybe_1
         {
             tbxTime.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
+
+        private void tbxDiscount_DoubleClick(object sender, EventArgs e)
+        {
+            frmDiscount.Show();
+        }
     }
 }
