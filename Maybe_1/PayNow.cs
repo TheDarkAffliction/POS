@@ -50,6 +50,7 @@ namespace Maybe_1
             tbxTotal.Text = "$" + (frmScanner.gross + (frmScanner.gross / 100 * 13) - frmScanner.gross * (frmDiscount.discount / 100)).ToString("#.00", CultureInfo.InvariantCulture);
             tbxBalance.Text = "$" + frmScanner.new_value;
             if (tbxBalance.Text == "$0") { tbxBalance.Text = "$0.00"; }
+            if (tbxTotal.Text == "$.00") { tbxTotal.Text = "$0.00"; }
         }
 
         private void btnCash_Click(object sender, EventArgs e)
