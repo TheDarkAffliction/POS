@@ -58,8 +58,6 @@ namespace Maybe_1
             if (tbxBalance.Text == "$0") { tbxBalance.Text = "$0.00"; }
             if (tbxTotal.Text == "$.00") { tbxTotal.Text = "$0.00"; }
 
-            radioButtonPrint.Checked = true;
-            radioButtonEmail.Checked = false;
         }
 
         private void btnCash_Click(object sender, EventArgs e)

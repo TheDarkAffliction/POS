@@ -41,42 +41,49 @@ namespace Maybe_1
         }
 
 
-
-        List<int> quantities = new List<int>();
-        List<string> itemnumbers = new List<string>();
+        //Description, Item number, quantity, price
+        public static List<double> receiptnumbers = new List<double>();
+        public static List<string> receiptstrings = new List<string>();
         public void scan(string itemnumber, string description, double price)
         {
             Label label = new Label();
             for (int i = 0; i <= 4; i++)
             {
                 string text = "";
-                if (i == 0)
+                if (i == 0) //Should be for quantity but dynamic textboxes are hard
                 {
                     text = "1";
+                    receiptstrings.Add(description);
+
                 }
                 else if (i == 1)
                 {
                     text = itemnumber;
+                    receiptstrings.Add(itemnumber);
                 }
                 else if (i == 2)
                 {
                     text = description;
                 }
+                else if (i == 3)
+                {
+                    text = price.ToString();
+                    receiptnumbers.Add(1);
+                }
                 else
                 {
                     text = price.ToString();
+                    receiptnumbers.Add(price);
                 }
 
                 if (i == 0)
                 {
-                    
                     frmMain.tblpMain.Controls.Add(new TextBox { Text = "1", Width = 60, TextAlign = HorizontalAlignment.Right, Font = new Font(label.Font.FontFamily, 14), TabStop = false});
                 }
                 else
                 {
                     frmMain.tblpMain.Controls.Add(new Label { Text = text, Font = new Font(label.Font.FontFamily, 14), AutoSize = true, TextAlign = ContentAlignment.MiddleRight });
                 }
-
             }
             label.Dispose();
 

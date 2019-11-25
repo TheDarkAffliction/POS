@@ -42,6 +42,17 @@ namespace Maybe_1
             frmScanner.frmMain.tbxHST.Text = "$0.00";
             frmScanner.frmMain.tbxTotal.Text = "$0.00";
 
+            tbxEmail.Text = "";
+            
+
+            if(ckbxPrint.Checked)
+            {
+                frmReceipt frmReceipt = new frmReceipt();
+
+                frmReceipt.Show();
+            }
+
+
         }
 
         private void frmPayment_Load(object sender, EventArgs e)
