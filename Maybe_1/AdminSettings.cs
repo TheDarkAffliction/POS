@@ -28,8 +28,7 @@ namespace Maybe_1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmAdmin frmAdmin = new frmAdmin();
-            frmAdmin.Show();
+            
             this.Hide();
         }
 
@@ -43,6 +42,11 @@ namespace Maybe_1
             TextWriter txt = new StreamWriter(Properties.Resources.tillNo);
             txt.Write(tbxTillNo.Text);
             txt.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

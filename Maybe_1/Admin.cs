@@ -12,6 +12,8 @@ namespace Maybe_1
 {
     public partial class frmAdmin : Form
     {
+        public static frmAddID frmAddID = new frmAddID();
+        public static frmAdminSettings frmAdminSettings = new frmAdminSettings();
         public frmAdmin()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Maybe_1
 
         private void btnAddID_Click(object sender, EventArgs e)
         {
-
+            frmAddID.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,10 +30,8 @@ namespace Maybe_1
             frmMain.Show();
             this.Hide();
         }
-
         private void btnSettings_Click(object sender, EventArgs e)
-        {
-            frmAdminSettings frmAdminSettings = new frmAdminSettings();
+        { 
             frmAdminSettings.Show();
             this.Hide();
         }

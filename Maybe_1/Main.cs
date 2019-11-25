@@ -22,7 +22,7 @@ namespace Maybe_1
 
         public static frmPayNow frmPayNow = new frmPayNow();
         public static frmDiscount frmDiscount = new frmDiscount();
-
+        public static frmFlags frmFlags = new frmFlags();
         public frmMain()
         {
             InitializeComponent();
@@ -35,6 +35,7 @@ namespace Maybe_1
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+
             DateTime thisDay = DateTime.Today;
             tbxDate.Text = thisDay.ToString("d");
 
@@ -54,14 +55,9 @@ namespace Maybe_1
         {
             frmPayNow.tbxTotal.Text = "$" + (frmScanner.gross + (frmScanner.gross / 100 * 13) - frmScanner.gross * (frmDiscount.discount / 100)).ToString("#.00", CultureInfo.InvariantCulture);
             frmPayNow.tbxBalance.Text = "$" + frmScanner.new_value;
-            frmPayNow.update_cash();
             frmPayNow.Show();
         }
 
-        private void btnCurrentDeals_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void tmrLoad_Tick(object sender, EventArgs e)
         {
@@ -89,6 +85,16 @@ namespace Maybe_1
         private void tblpMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnFlags_Click(object sender, EventArgs e)
+        {
+            frmFlags.Show();
+        }
+
+        private void tmrTimer_Tick(object sender, EventArgs e)
+        {
+            tbxTime.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
     }
 }

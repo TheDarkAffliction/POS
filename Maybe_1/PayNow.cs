@@ -25,11 +25,17 @@ namespace Maybe_1
         public void update_cash()
         {
            double var1 = Convert.ToDouble(frmMain.frmPayNow.tbxBalance.Text.Replace("$", ""));
-            Console.WriteLine(var1);
            tbxBalance.Text = "$" + ((frmCash.total / 100) + var1).ToString("#.00", CultureInfo.InvariantCulture);
            if(((frmCash.total / 100) + var1) >= Convert.ToDouble(frmMain.frmPayNow.tbxTotal.Text.Replace("$","")))
             {
                 frmPayment.Show();
+                frmPayment.tbxTotal.Text = frmMain.frmPayNow.tbxTotal.Text;
+                frmPayment.tbxBalance.Text = frmMain.frmPayNow.tbxBalance.Text;
+                frmPayment.tbxChange.Text = "$" + (Convert.ToDouble(frmMain.frmPayNow.tbxBalance.Text.Replace("$", "")) - Convert.ToDouble(frmMain.frmPayNow.tbxTotal.Text.Replace("$", ""))).ToString("#.00", CultureInfo.InvariantCulture);
+                if(frmPayment.tbxChange.Text[1] == '.')
+                {
+                    frmPayment.tbxChange.Text = frmPayment.tbxChange.Text.Insert(1, "0");
+                }
             }
            if(tbxBalance.Text == "$0" || tbxBalance.Text == "$.00") { tbxBalance.Text = "$0.00";  }
            if (tbxTotal.Text == "$.00") { tbxTotal.Text = "$0.00"; }
