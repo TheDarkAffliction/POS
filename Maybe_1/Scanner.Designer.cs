@@ -40,7 +40,7 @@
             // 
             // btnSkates
             // 
-            this.btnSkates.Location = new System.Drawing.Point(13, 13);
+            this.btnSkates.Location = new System.Drawing.Point(12, 13);
             this.btnSkates.Name = "btnSkates";
             this.btnSkates.Size = new System.Drawing.Size(100, 100);
             this.btnSkates.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             // btnWomensShoes
             // 
-            this.btnWomensShoes.Location = new System.Drawing.Point(225, 13);
+            this.btnWomensShoes.Location = new System.Drawing.Point(12, 225);
             this.btnWomensShoes.Name = "btnWomensShoes";
             this.btnWomensShoes.Size = new System.Drawing.Size(100, 100);
             this.btnWomensShoes.TabIndex = 2;
@@ -60,7 +60,7 @@
             // 
             // btnHockeyMask
             // 
-            this.btnHockeyMask.Location = new System.Drawing.Point(331, 13);
+            this.btnHockeyMask.Location = new System.Drawing.Point(12, 331);
             this.btnHockeyMask.Name = "btnHockeyMask";
             this.btnHockeyMask.Size = new System.Drawing.Size(100, 100);
             this.btnHockeyMask.TabIndex = 3;
@@ -70,7 +70,7 @@
             // 
             // btnHockeyGloves
             // 
-            this.btnHockeyGloves.Location = new System.Drawing.Point(437, 13);
+            this.btnHockeyGloves.Location = new System.Drawing.Point(12, 437);
             this.btnHockeyGloves.Name = "btnHockeyGloves";
             this.btnHockeyGloves.Size = new System.Drawing.Size(100, 100);
             this.btnHockeyGloves.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // btnLanyard
             // 
-            this.btnLanyard.Location = new System.Drawing.Point(119, 13);
+            this.btnLanyard.Location = new System.Drawing.Point(12, 119);
             this.btnLanyard.Name = "btnLanyard";
             this.btnLanyard.Size = new System.Drawing.Size(100, 100);
             this.btnLanyard.TabIndex = 1;
@@ -90,7 +90,7 @@
             // 
             // btnGiftCard
             // 
-            this.btnGiftCard.Location = new System.Drawing.Point(437, 119);
+            this.btnGiftCard.Location = new System.Drawing.Point(12, 543);
             this.btnGiftCard.Name = "btnGiftCard";
             this.btnGiftCard.Size = new System.Drawing.Size(100, 100);
             this.btnGiftCard.TabIndex = 24;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 230);
+            this.ClientSize = new System.Drawing.Size(120, 649);
             this.ControlBox = false;
             this.Controls.Add(this.btnGiftCard);
             this.Controls.Add(this.btnLanyard);

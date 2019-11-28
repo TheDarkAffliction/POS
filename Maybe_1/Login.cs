@@ -52,7 +52,6 @@ namespace Maybe_1
         {
             InitializeComponent();
         }
-
         private void tbxEnterID_TextChanged(object sender, EventArgs e)
         {
             if (Globals.ID.Contains(tbxEnterID.Text))

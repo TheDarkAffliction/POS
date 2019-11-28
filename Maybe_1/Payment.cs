@@ -19,8 +19,15 @@ namespace Maybe_1
             InitializeComponent();
         }
 
+        //public static string gross = frmScanner.frmMain.tbxGross.Text;
+        //public static string hst = frmScanner.frmMain.tbxHST.Text;
+        //public static string total = frmScanner.frmMain.tbxTotal.Text;
         private void btnNext_Click(object sender, EventArgs e)
         {
+            //gross = frmScanner.frmMain.tbxGross.Text;
+            //hst = frmScanner.frmMain.tbxHST.Text;
+            //total = frmScanner.frmMain.tbxTotal.Text;
+
             this.Hide();
             frmMain.frmPayNow.Hide();
             frmMain.frmDiscount.Hide();

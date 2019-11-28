@@ -17,6 +17,9 @@ namespace Maybe_1
         public static frmPayment frmPayment = new frmPayment();
         public static frmCash frmCash = new frmCash();
         public static frmDebit frmDebit = new frmDebit();
+
+        public static string type = "";
+
         public frmPayNow()
         {
             InitializeComponent();
@@ -36,6 +39,7 @@ namespace Maybe_1
                 {
                     frmPayment.tbxChange.Text = frmPayment.tbxChange.Text.Insert(1, "0");
                 }
+                type = "CASH";
             }
            if(tbxBalance.Text == "$0" || tbxBalance.Text == "$.00") { tbxBalance.Text = "$0.00";  }
            if (tbxTotal.Text == "$.00") { tbxTotal.Text = "$0.00"; }
@@ -70,11 +74,14 @@ namespace Maybe_1
         private void btnDebit_Click(object sender, EventArgs e)
         {
             frmDebit.Show();
+            type = "DEBIT";
         }
 
         private void btnCredit_Click(object sender, EventArgs e)
         {
             frmDebit.Show();
+            frmDebit.Text = "Credit";
+            type = "CREDIT";
         }
     }
 }

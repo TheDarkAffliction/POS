@@ -32,7 +32,7 @@
             this.lblPayNow = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.tbxTotal = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnOther = new System.Windows.Forms.Button();
             this.btnCash = new System.Windows.Forms.Button();
             this.btnDebit = new System.Windows.Forms.Button();
             this.btnCredit = new System.Windows.Forms.Button();
@@ -79,43 +79,50 @@
             this.tbxTotal.Size = new System.Drawing.Size(138, 35);
             this.tbxTotal.TabIndex = 3;
             // 
-            // button4
+            // btnOther
             // 
-            this.button4.Location = new System.Drawing.Point(590, 160);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 150);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOther.Location = new System.Drawing.Point(590, 160);
+            this.btnOther.Name = "btnOther";
+            this.btnOther.Size = new System.Drawing.Size(150, 150);
+            this.btnOther.TabIndex = 7;
+            this.btnOther.Text = "Other";
+            this.btnOther.UseVisualStyleBackColor = true;
             // 
             // btnCash
             // 
+            this.btnCash.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCash.Location = new System.Drawing.Point(50, 160);
             this.btnCash.Name = "btnCash";
             this.btnCash.Size = new System.Drawing.Size(150, 150);
             this.btnCash.TabIndex = 8;
             this.btnCash.Text = "Cash";
-            this.btnCash.UseVisualStyleBackColor = true;
+            this.btnCash.UseVisualStyleBackColor = false;
             this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // btnDebit
             // 
+            this.btnDebit.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnDebit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDebit.Location = new System.Drawing.Point(230, 160);
             this.btnDebit.Name = "btnDebit";
             this.btnDebit.Size = new System.Drawing.Size(150, 150);
             this.btnDebit.TabIndex = 9;
             this.btnDebit.Text = "Debit";
-            this.btnDebit.UseVisualStyleBackColor = true;
+            this.btnDebit.UseVisualStyleBackColor = false;
             this.btnDebit.Click += new System.EventHandler(this.btnDebit_Click);
             // 
             // btnCredit
             // 
+            this.btnCredit.BackColor = System.Drawing.Color.Red;
+            this.btnCredit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCredit.Location = new System.Drawing.Point(410, 160);
             this.btnCredit.Name = "btnCredit";
             this.btnCredit.Size = new System.Drawing.Size(150, 150);
             this.btnCredit.TabIndex = 10;
             this.btnCredit.Text = "Credit";
-            this.btnCredit.UseVisualStyleBackColor = true;
+            this.btnCredit.UseVisualStyleBackColor = false;
             this.btnCredit.Click += new System.EventHandler(this.btnCredit_Click);
             // 
             // lblBalance
@@ -150,7 +157,7 @@
             this.Controls.Add(this.btnCredit);
             this.Controls.Add(this.btnDebit);
             this.Controls.Add(this.btnCash);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnOther);
             this.Controls.Add(this.tbxTotal);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblPayNow);
@@ -168,7 +175,7 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblPayNow;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnOther;
         private System.Windows.Forms.Button btnCash;
         private System.Windows.Forms.Button btnDebit;
         private System.Windows.Forms.Button btnCredit;

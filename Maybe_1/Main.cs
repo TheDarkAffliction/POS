@@ -106,5 +106,10 @@ namespace Maybe_1
         {
             frmScanner.scan(" ", "Skate Sharpening", 5.99);
         }
+
+        private void frmMain_KeyDown(object sender, KeyEventArgs e)
+        {
+            frmScanner.frmMain.btnPayNow.Focus();
+        }
     }
 }

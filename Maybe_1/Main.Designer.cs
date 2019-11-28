@@ -208,7 +208,7 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.tblpMain.Location = new System.Drawing.Point(61, 272);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
@@ -400,7 +400,7 @@
             this.tbxDate.Location = new System.Drawing.Point(448, 122);
             this.tbxDate.Name = "tbxDate";
             this.tbxDate.ReadOnly = true;
-            this.tbxDate.Size = new System.Drawing.Size(121, 29);
+            this.tbxDate.Size = new System.Drawing.Size(112, 29);
             this.tbxDate.TabIndex = 21;
             this.tbxDate.TabStop = false;
             // 
@@ -494,10 +494,10 @@
             // tbxTime
             // 
             this.tbxTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxTime.Location = new System.Drawing.Point(566, 122);
+            this.tbxTime.Location = new System.Drawing.Point(558, 122);
             this.tbxTime.Name = "tbxTime";
             this.tbxTime.ReadOnly = true;
-            this.tbxTime.Size = new System.Drawing.Size(108, 29);
+            this.tbxTime.Size = new System.Drawing.Size(116, 29);
             this.tbxTime.TabIndex = 31;
             this.tbxTime.TabStop = false;
             // 
@@ -533,6 +533,7 @@
             this.btnEditPreset.Name = "btnEditPreset";
             this.btnEditPreset.Size = new System.Drawing.Size(190, 75);
             this.btnEditPreset.TabIndex = 34;
+            this.btnEditPreset.TabStop = false;
             this.btnEditPreset.Text = "Edit Presets";
             this.btnEditPreset.UseVisualStyleBackColor = true;
             // 
@@ -542,6 +543,7 @@
             this.btnPreset6.Name = "btnPreset6";
             this.btnPreset6.Size = new System.Drawing.Size(75, 75);
             this.btnPreset6.TabIndex = 35;
+            this.btnPreset6.TabStop = false;
             this.btnPreset6.Text = "Preset 6";
             this.btnPreset6.UseVisualStyleBackColor = true;
             // 
@@ -551,6 +553,7 @@
             this.btnPreset5.Name = "btnPreset5";
             this.btnPreset5.Size = new System.Drawing.Size(75, 75);
             this.btnPreset5.TabIndex = 36;
+            this.btnPreset5.TabStop = false;
             this.btnPreset5.Text = "Preset 5";
             this.btnPreset5.UseVisualStyleBackColor = true;
             // 
@@ -560,6 +563,7 @@
             this.btnPreset4.Name = "btnPreset4";
             this.btnPreset4.Size = new System.Drawing.Size(75, 75);
             this.btnPreset4.TabIndex = 37;
+            this.btnPreset4.TabStop = false;
             this.btnPreset4.Text = "Preset 4";
             this.btnPreset4.UseVisualStyleBackColor = true;
             // 
@@ -569,6 +573,7 @@
             this.btnPreset3.Name = "btnPreset3";
             this.btnPreset3.Size = new System.Drawing.Size(75, 75);
             this.btnPreset3.TabIndex = 38;
+            this.btnPreset3.TabStop = false;
             this.btnPreset3.Text = "Preset 3";
             this.btnPreset3.UseVisualStyleBackColor = true;
             // 
@@ -578,6 +583,7 @@
             this.btnPreset2.Name = "btnPreset2";
             this.btnPreset2.Size = new System.Drawing.Size(75, 75);
             this.btnPreset2.TabIndex = 39;
+            this.btnPreset2.TabStop = false;
             this.btnPreset2.Text = "Preset 2";
             this.btnPreset2.UseVisualStyleBackColor = true;
             // 
@@ -587,6 +593,7 @@
             this.btnPreset1.Name = "btnPreset1";
             this.btnPreset1.Size = new System.Drawing.Size(75, 75);
             this.btnPreset1.TabIndex = 40;
+            this.btnPreset1.TabStop = false;
             this.btnPreset1.Text = "Sharpen Skates";
             this.btnPreset1.UseVisualStyleBackColor = true;
             this.btnPreset1.Click += new System.EventHandler(this.btnPreset1_Click);
@@ -639,6 +646,7 @@
             this.Name = "frmMain";
             this.Text = "Source For Sports";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
