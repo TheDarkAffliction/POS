@@ -23,7 +23,9 @@ namespace Maybe_1
         {
             frmScanner.discount = frmScanner.gross - frmScanner.gross * (discount / 100);
             frmScanner.update();
-            this.Close();
+            discount = 0;
+            tbxPercent.Text = "0";
+            this.Hide();
         }
         private void tbxPercent_KeyPress(object sender, KeyEventArgs e)
         {
@@ -110,7 +112,6 @@ namespace Maybe_1
 
         private void tbxPercent_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Console.WriteLine("YEET");
             if (e.KeyChar == (char)13)
             {
                 frmScanner.discount = frmScanner.gross - frmScanner.gross * (discount / 100);
@@ -123,6 +124,12 @@ namespace Maybe_1
         {
             discount = 0;
             this.Hide();
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            discount /= 10;
+            tbxPercent.Text = discount.ToString();
         }
     }
 }

@@ -209,7 +209,7 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
             this.tblpMain.Location = new System.Drawing.Point(61, 272);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
@@ -442,7 +442,7 @@
             this.tbxTill.Location = new System.Drawing.Point(448, 185);
             this.tbxTill.Name = "tbxTill";
             this.tbxTill.ReadOnly = true;
-            this.tbxTill.Size = new System.Drawing.Size(121, 29);
+            this.tbxTill.Size = new System.Drawing.Size(112, 29);
             this.tbxTill.TabIndex = 26;
             this.tbxTill.TabStop = false;
             // 
@@ -459,6 +459,7 @@
             // tmrDiscount
             // 
             this.tmrDiscount.Interval = 1;
+            this.tmrDiscount.Tick += new System.EventHandler(this.tmrDiscount_Tick);
             // 
             // lblDiscount
             // 

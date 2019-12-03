@@ -48,6 +48,8 @@
             this.lblChange = new System.Windows.Forms.Label();
             this.lblMerchTotal = new System.Windows.Forms.Label();
             this.lblEnd = new System.Windows.Forms.Label();
+            this.lblSetDiscount = new System.Windows.Forms.Label();
+            this.lblDiscount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -241,11 +243,36 @@
             this.lblEnd.Text = "Returns and Exchanges only \r\nvalid witin 10 days of purchase.\r\n\r\nThank you for sh" +
     "opping at \r\nSportCo Source for Sports";
             // 
+            // lblSetDiscount
+            // 
+            this.lblSetDiscount.AutoSize = true;
+            this.lblSetDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetDiscount.Location = new System.Drawing.Point(11, 418);
+            this.lblSetDiscount.Name = "lblSetDiscount";
+            this.lblSetDiscount.Size = new System.Drawing.Size(60, 16);
+            this.lblSetDiscount.TabIndex = 18;
+            this.lblSetDiscount.Text = "Discount";
+            this.lblSetDiscount.Visible = false;
+            // 
+            // lblDiscount
+            // 
+            this.lblDiscount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiscount.Location = new System.Drawing.Point(185, 417);
+            this.lblDiscount.Name = "lblDiscount";
+            this.lblDiscount.Size = new System.Drawing.Size(90, 16);
+            this.lblDiscount.TabIndex = 19;
+            this.lblDiscount.Text = "$";
+            this.lblDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDiscount.Visible = false;
+            // 
             // frmReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 661);
+            this.Controls.Add(this.lblDiscount);
+            this.Controls.Add(this.lblSetDiscount);
             this.Controls.Add(this.lblEnd);
             this.Controls.Add(this.lblMerchTotal);
             this.Controls.Add(this.lblChange);
@@ -293,5 +320,7 @@
         private System.Windows.Forms.Label lblChange;
         private System.Windows.Forms.Label lblMerchTotal;
         private System.Windows.Forms.Label lblEnd;
+        private System.Windows.Forms.Label lblSetDiscount;
+        private System.Windows.Forms.Label lblDiscount;
     }
 }

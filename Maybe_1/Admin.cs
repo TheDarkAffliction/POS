@@ -14,6 +14,8 @@ namespace Maybe_1
     {
         public static frmAddID frmAddID = new frmAddID();
         public static frmAdminSettings frmAdminSettings = new frmAdminSettings();
+        public static frmScanner frmScanner = new frmScanner();
+
         public frmAdmin()
         {
             InitializeComponent();
@@ -26,8 +28,7 @@ namespace Maybe_1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmMain frmMain = new frmMain();
-            frmMain.Show();
+            frmScanner.Show();
             this.Hide();
         }
         private void btnSettings_Click(object sender, EventArgs e)

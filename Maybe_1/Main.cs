@@ -116,5 +116,10 @@ namespace Maybe_1
         {
             Application.Restart();
         }
+
+        private void tmrDiscount_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

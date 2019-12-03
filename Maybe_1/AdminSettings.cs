@@ -28,7 +28,7 @@ namespace Maybe_1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            
+            frmLogin.frmAdmin.Show();
             this.Hide();
         }
 

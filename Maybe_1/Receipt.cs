@@ -104,9 +104,18 @@ namespace Maybe_1
             lblHST.Location = new Point(lblHST.Left, y2);
             lblHST.Text += frmScanner.frmMain.tbxHST.Text;
             y2 += 15;
+            if(frmScanner.frmMain.tbxDiscount.Text != "0%")
+            {
+                lblSetDiscount.Visible = true;
+                lblDiscount.Visible = true;
+                lblDiscount.Text = frmScanner.frmMain.tbxDiscount.Text;
+                lblSetDiscount.Location = new Point(lblSetDiscount.Left, y2);
+                lblDiscount.Location = new Point(lblDiscount.Left, y2);
+                y2 += 15;
+            }
             lblSetTotal.Location = new Point(lblSetTotal.Left, y2);
             lblTotal.Location = new Point(lblTotal.Left, y2);
-            lblTotal.Text += (Convert.ToDouble(lblHST.Text.Replace("$", "")) + Convert.ToDouble(lblMerchTotal.Text.Replace("$", ""))).ToString();
+            lblTotal.Text += (frmScanner.gross + (frmScanner.gross / 100 * 13) - frmScanner.gross * (frmDiscount.discount / 100)).ToString("#.00", CultureInfo.InvariantCulture);
             y2 += 25;
             lblSetType.Location = new Point(lblSetType.Left, y2);
             lblType.Location = new Point(lblType.Left, y2);
