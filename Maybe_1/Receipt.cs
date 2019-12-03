@@ -23,6 +23,7 @@ namespace Maybe_1
         int y = 282;
         private void Receipt_Load(object sender, EventArgs e)
         {
+            y = 282;
             //Time
             lblDate.Text = DateTime.Now.ToString();
 
@@ -134,7 +135,7 @@ namespace Maybe_1
             y2 += 80;
             lblEnd.Location = new Point(lblEnd.Left, y2);
 
-            this.Height = y2 + 160;
+            this.Height = y2 + 130;
 
             //Reset everything
             frmMain.frmPayNow.Hide();
@@ -157,6 +158,8 @@ namespace Maybe_1
             frmScanner.frmMain.tbxHST.Text = "$0.00";
             frmScanner.frmMain.tbxTotal.Text = "$0.00";
 
+            frmScanner.receiptnumbers.Clear();
+            frmScanner.receiptstrings.Clear();
         }
 
         private void tmrDraw_Tick(object sender, EventArgs e)

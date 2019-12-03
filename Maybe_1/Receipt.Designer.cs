@@ -136,7 +136,7 @@
             // 
             // lblHST
             // 
-            this.lblHST.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblHST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHST.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHST.Location = new System.Drawing.Point(185, 386);
             this.lblHST.Name = "lblHST";
@@ -146,7 +146,7 @@
             // 
             // lblTotal
             // 
-            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(185, 402);
             this.lblTotal.Name = "lblTotal";
@@ -198,7 +198,7 @@
             // 
             // lblType
             // 
-            this.lblType.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblType.Location = new System.Drawing.Point(153, 433);
             this.lblType.Name = "lblType";
@@ -209,7 +209,7 @@
             // 
             // lblChange
             // 
-            this.lblChange.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblChange.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChange.Location = new System.Drawing.Point(153, 449);
             this.lblChange.Name = "lblChange";
@@ -221,7 +221,7 @@
             // 
             // lblMerchTotal
             // 
-            this.lblMerchTotal.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblMerchTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMerchTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMerchTotal.Location = new System.Drawing.Point(185, 370);
             this.lblMerchTotal.Name = "lblMerchTotal";
