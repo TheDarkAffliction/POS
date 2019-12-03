@@ -31,5 +31,10 @@ namespace Maybe_1
             tbxID.Text = "";
             cbxAdmin.Checked = false;
         }
+
+        private void tbxFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -111,5 +111,10 @@ namespace Maybe_1
         {
             frmScanner.frmMain.btnPayNow.Focus();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

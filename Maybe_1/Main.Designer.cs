@@ -71,6 +71,7 @@
             this.btnPreset3 = new System.Windows.Forms.Button();
             this.btnPreset2 = new System.Windows.Forms.Button();
             this.btnPreset1 = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,7 +209,7 @@
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.48229F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
             this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
+            this.tblpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
             this.tblpMain.Location = new System.Drawing.Point(61, 272);
             this.tblpMain.Name = "tblpMain";
             this.tblpMain.RowCount = 100;
@@ -529,7 +530,7 @@
             // 
             // btnEditPreset
             // 
-            this.btnEditPreset.Location = new System.Drawing.Point(93, 776);
+            this.btnEditPreset.Location = new System.Drawing.Point(379, 773);
             this.btnEditPreset.Name = "btnEditPreset";
             this.btnEditPreset.Size = new System.Drawing.Size(190, 75);
             this.btnEditPreset.TabIndex = 34;
@@ -598,6 +599,20 @@
             this.btnPreset1.UseVisualStyleBackColor = true;
             this.btnPreset1.Click += new System.EventHandler(this.btnPreset1_Click);
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Location = new System.Drawing.Point(93, 776);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(75, 75);
+            this.btnLogOut.TabIndex = 41;
+            this.btnLogOut.TabStop = false;
+            this.btnLogOut.Text = "Log\r\nOut";
+            this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -605,6 +620,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnPreset1);
             this.Controls.Add(this.btnPreset2);
             this.Controls.Add(this.btnPreset3);
@@ -697,6 +713,7 @@
         private System.Windows.Forms.Button btnPreset3;
         private System.Windows.Forms.Button btnPreset2;
         private System.Windows.Forms.Button btnPreset1;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }
 

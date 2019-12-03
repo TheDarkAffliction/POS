@@ -29,33 +29,12 @@ namespace Maybe_1
             //total = frmScanner.frmMain.tbxTotal.Text;
 
             this.Hide();
-            frmMain.frmPayNow.Hide();
-            frmMain.frmDiscount.Hide();
-            frmScanner.frmMain.tblpMain.Controls.Clear();
-            frmScanner.total = 0;
-            frmScanner.discount = 0;
-            frmScanner.gross = 0;
-            frmDiscount.discount = 0;
-            frmScanner.new_value = 0;
-
-            tbxBalance.Text = "$0.00";
-            tbxTotal.Text = "$0.00";
-            tbxTotal.Text = "$0.00";
-
-            frmScanner.update();
-
-            frmScanner.frmMain.tbxBalance.Text = "$0.00";
-            frmScanner.frmMain.tbxGross.Text = "$0.00";
-            frmScanner.frmMain.tbxHST.Text = "$0.00";
-            frmScanner.frmMain.tbxTotal.Text = "$0.00";
 
             tbxEmail.Text = "";
-            
 
             if(ckbxPrint.Checked)
             {
                 frmReceipt frmReceipt = new frmReceipt();
-
                 frmReceipt.Show();
             }
 

@@ -76,6 +76,7 @@
             this.tbxFirstName.Name = "tbxFirstName";
             this.tbxFirstName.Size = new System.Drawing.Size(142, 31);
             this.tbxFirstName.TabIndex = 0;
+            this.tbxFirstName.TextChanged += new System.EventHandler(this.tbxFirstName_TextChanged);
             // 
             // cbxAdmin
             // 

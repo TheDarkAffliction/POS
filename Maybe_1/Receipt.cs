@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Globalization;
+
 namespace Maybe_1
 {
     public partial class frmReceipt : Form
@@ -17,21 +19,8 @@ namespace Maybe_1
             InitializeComponent();
         }
 
-        public struct Data
-        {
-            public Data(int intValue, string strValue)
-            {
-                IntegerData = intValue;
-                StringData = strValue;
-            }
-
-            public int IntegerData { get; private set; }
-            public string StringData { get; private set; }
-        }
-
 
         int y = 282;
-        List<Data> data = new List<Data>();
         private void Receipt_Load(object sender, EventArgs e)
         {
             //Time
@@ -68,7 +57,6 @@ namespace Maybe_1
                 {
                     if(counter == 0)
                     {
-                        Console.WriteLine("YEET");
                         label.Text = frmScanner.receiptstrings[stringcounter];
                     }
                     else
@@ -101,41 +89,74 @@ namespace Maybe_1
                     counter += 1;
                 }
             }
-            y -= 30;
+            y -= 15;
             tmrDraw2.Enabled = true;
-            y += 15;
-
-            /*
+            //New y variable because drawing with the timer is spooky
+            int y2 = y + 10;
+            
             //Set money labels
-            lblSetMerchTotal.Location = new Point(lblSetMerchTotal.Left, y);
-            lblMerchTotal.Location = new Point(lblMerchTotal.Left, y);
-            //lblMerchTotal.Text = frmPayment.gross;
-            lblSetMerchTotal.Visible = true;
-            lblMerchTotal.Visible = true;
-            y += 15;
-            a
-            lblSetHST.Location = new Point(lblSetHST.Left, y);
-            lblHST.Location = new Point(lblSetHST.Left, y);
+            lblSetMerchTotal.Location = new Point(lblSetMerchTotal.Left, y2);
+            lblMerchTotal.Location = new Point(lblMerchTotal.Left, y2);
+            lblMerchTotal.Text += frmScanner.gross.ToString();
+            y2 += 15;
+            lblSetHST.Location = new Point(lblSetHST.Left, y2);
+            lblHST.Location = new Point(lblHST.Left, y2);
             lblHST.Text += frmScanner.frmMain.tbxHST.Text;
-            y += 15;
+            y2 += 15;
+            lblSetTotal.Location = new Point(lblSetTotal.Left, y2);
+            lblTotal.Location = new Point(lblTotal.Left, y2);
+            lblTotal.Text += (Convert.ToDouble(lblHST.Text.Replace("$", "")) + Convert.ToDouble(lblMerchTotal.Text.Replace("$", ""))).ToString();
+            y2 += 25;
+            lblSetType.Location = new Point(lblSetType.Left, y2);
+            lblType.Location = new Point(lblType.Left, y2);
 
-            lblSetType.Location = new Point(lblSetType.Left, y);
-            lblType.Location = new Point(lblSetType.Left, y);
             if (frmPayNow.type == "DEBIT")
             {
                 lblSetType.Text = "Debit";
+                lblType.Text = lblTotal.Text;
             }
             else if (frmPayNow.type == "CREDIT")
             {
                 lblSetType.Text = "Credit";
+                lblType.Text = lblTotal.Text;
             }
             else
             {
-                lblSetType.Text = "Cash";
-                y += 15;
                 
+                lblSetType.Text = "Cash";
+                lblType.Text = frmPayNow.frmPayment.tbxBalance.Text;
+                lblSetChange.Visible = true;
+                lblChange.Visible = true;
+                lblChange.Text = "$" + (Convert.ToDouble(lblType.Text.Replace("$", "")) - Convert.ToDouble(lblTotal.Text.Replace("$", ""))).ToString("#.00", CultureInfo.InvariantCulture);
+                lblSetChange.Location = new Point(lblSetChange.Left, y2+15);
+                lblChange.Location = new Point(lblChange.Left, y2+15);
             }
-            y += 15;*/
+            y2 += 80;
+            lblEnd.Location = new Point(lblEnd.Left, y2);
+
+            this.Height = y2 + 160;
+
+            //Reset everything
+            frmMain.frmPayNow.Hide();
+            frmMain.frmDiscount.Hide();
+            frmScanner.frmMain.tblpMain.Controls.Clear();
+            frmScanner.total = 0;
+            frmScanner.discount = 0;
+            frmScanner.gross = 0;
+            frmDiscount.discount = 0;
+            frmScanner.new_value = 0;
+
+            frmPayNow.frmPayment.tbxBalance.Text = "$0.00";
+            frmPayNow.frmPayment.tbxTotal.Text = "$0.00";
+            frmPayNow.frmPayment.tbxTotal.Text = "$0.00";
+
+            frmScanner.update();
+
+            frmScanner.frmMain.tbxBalance.Text = "$0.00";
+            frmScanner.frmMain.tbxGross.Text = "$0.00";
+            frmScanner.frmMain.tbxHST.Text = "$0.00";
+            frmScanner.frmMain.tbxTotal.Text = "$0.00";
+
         }
 
         private void tmrDraw_Tick(object sender, EventArgs e)
@@ -160,18 +181,14 @@ namespace Maybe_1
             tmrDraw.Enabled = false;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
 
         private void tmrDraw2_Tick(object sender, EventArgs e)
         {
             Graphics formGraphics;
-            Pen pen = new Pen(Color.Black, 4);
+            Pen pen2 = new Pen(Color.Black, 4);
             formGraphics = this.CreateGraphics();
-            formGraphics.DrawRectangle(pen, 0, y, 300, 1);
-            pen.Dispose();
+            formGraphics.DrawRectangle(pen2, 0, y, 300, 1);
+            pen2.Dispose();
             formGraphics.Dispose();
             tmrDraw2.Enabled = false;
         }
